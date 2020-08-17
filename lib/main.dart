@@ -71,7 +71,7 @@ class Hosgeldiniz extends StatelessWidget{
                   fontSize: 32,
                 ),
               ),
-                  Icon(Icons.skip_next, size: 40),
+                  Icon(Icons.navigate_next, size: 40),
             ],
               ),
             ),
