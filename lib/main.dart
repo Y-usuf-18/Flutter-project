@@ -83,7 +83,7 @@ class Hosgeldiniz extends StatelessWidget{
     );
   }
 }
-  
+
 class Grade extends StatelessWidget { // Bütün Classları İngilizce      isimlendiriyoruz.
   @override
   Widget build(BuildContext context) {
