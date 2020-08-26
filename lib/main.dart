@@ -1,20 +1,47 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/cupertino.dart';
+import 'package:flare_splash_screen/flare_splash_screen.dart';
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Hosgeldiniz(),
-  ));
+
+void main() => runApp(MyApp());
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Hoşgeldiniz',
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primarySwatch: Colors.red,
+      ),
+      home: SplashScreen.navigate(
+        name: 'assets/splash.flr',
+        next: Hosgeldiniz(),
+        startAnimation: '1',
+        until: () => Future.delayed(Duration(seconds: 3)),
+        backgroundColor: Color(0xff6200ee),
+      ),
+    );
+  }
 }
 
 
+class CallHome extends StatefulWidget {
+  @override
+  _CallHomeState createState() => _CallHomeState();
+}
+
+class _CallHomeState extends State<CallHome> {
+  @override
+  Widget build(BuildContext context) {
+    return Hosgeldiniz();
+  }
+}
 
 class Hosgeldiniz extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
       title: "Hosgeldiniz",
       home: Scaffold(
         appBar: AppBar(
