@@ -1500,11 +1500,9 @@
     ]}
     ]
   },
-
-  {
-    "sinif":"TYT",
+  {"sinif": "Üniversite Hazırlık",
     "dersler": [
-      {"ders":"Türkçe",
+      {"ders":"TYT-Türkçe",
         "konular": [
       "Sözcük Anlamı",
       "Söz Yorumu",
@@ -1526,7 +1524,7 @@
        "Cümle  Türleri",
        "Anlatım Bozukluğu"
     ]},
-      {"ders":"Matematik",
+      {"ders":"TYT-Matematik",
         "konular": [
       "Temel Kavramlar",
       "Sayı Basamakları",
@@ -1552,7 +1550,7 @@
        "Karmaşık Sayılar",
        "Parabol"
     ]},
-      {"ders":"Geometri",
+      {"ders":"TYT-Geometri",
         "konular": [
       "Doğruda ve Üçgende Açılar",
       "Dik ve Özel Üçgenler",
@@ -1579,7 +1577,7 @@
        "Vektörler-1",
        "Doğrunun Analitiği"
     ]},
-      {"ders":"Fizik",
+      {"ders":"TYT-Fizik",
         "konular": [
       "Elektrostatik",
       "Mıknatıs",
@@ -1598,7 +1596,7 @@
        "Kuvvetler",
        "Fiziğin Doğası"
     ]},
-      {"ders":"Kimya",
+      {"ders":"TYT-Kimya",
         "konular": [
       "Kimya Bilimi",
       "Atom ve Periyodik Sistem",
@@ -1614,7 +1612,7 @@
        "Asitler, Bazlar, Tuzlar",
        "Kimya Her Yerde"
     ]},
-      {"ders":"Biyoloji ",
+      {"ders":"TYT-Biyoloji ",
         "konular": [
       "Biyoloji Bilimi",
       "Temel Bileşenler",
@@ -1627,7 +1625,7 @@
       "Kalıtım",
        "Ekosistem Ekolojisi"
     ]},
-      {"ders":"Tarih ",
+      {"ders":"TYT-Tarih ",
         "konular": [
       "Tarih Bilimine Giriş",
       "İlk Çağ Medeniyetleri",
@@ -1652,7 +1650,7 @@
       "Atatürkçülük ve Atatürk İlkeleri",
       "Atatürk Dönemi Türk Dış Politikası"
     ]},
-      {"ders":"Coğrafya",
+      {"ders":"TYT-Coğrafya",
         "konular": [
       "Doğa ve İnsan",
       "Dünya’nın Şekil ve Hareketleri",
@@ -1676,7 +1674,7 @@
        "Bölgeler ve Ülkeler",
        "Doğal Afetler"
     ]},
-      {"ders":"Felsefe",
+      {"ders":"TYT-Felsefe",
         "konular": [
       "Felsefeyi Tanıma",
       "Felsefe ile Düşünme",
@@ -1688,7 +1686,7 @@
       "Siyaset Felsefesi",
       "Sanat Felsefesi"
     ]},
-      {"ders":"Din Kültürü",
+      {"ders":"TYT-Din Kültürü",
         "konular": [
       "İnanç",
       "İbadet",
@@ -1701,13 +1699,9 @@
       "İslam Düşüncesinde Tasavvufi Yorumlar",
        "Güncel Dini Meseleler",
        "Dinler"
-    ]}
-    ]
-  },
-  {
-    "sinif":"AYT",
-    "dersler": [
-      {"ders":"Matematik",
+    ]},
+
+      {"ders":"AYT-Matematik",
         "konular": [
      "Fonksiyonlar",
      "Polinomlar",
@@ -1727,7 +1721,7 @@
       "Belirli İntegral",
       "İntegralle Alan Hesabı"
     ]},
-      {"ders":"Geometri",
+      {"ders":"AYT-Geometri",
         "konular": [
       "Doğruda Açılar",
       "Üçgende Açılar",
@@ -1752,7 +1746,7 @@
        "Silindir-Koni-Küre",
        "Çemberin Analitiği"
     ]},
-      {"ders":"Fizik",
+      {"ders":"AYT-Fizik",
         "konular": [
       "Vektörler",
       "Bağıl Hareket",
@@ -1775,7 +1769,7 @@
        "Modern Fizik",
        "Modern Fiziğin Teknolojideki Uygulamaları"
     ]},
-      {"ders":"Kimya",
+      {"ders":"AYT-Kimya",
         "konular": [
       "Kuantum Sayıları",
       "Elektron Dizilimi",
@@ -1800,7 +1794,7 @@
        "Enerji Kaynakları ve Bilimsel Gelişmeler"
           ]},
       {
-          "ders":"Biyoloji",
+          "ders":"AYT-Biyoloji",
           "konular": [
       "Sinir Sistemi",
       "Endokrin Sistem",
@@ -1818,7 +1812,7 @@
       "Bitki Biyolojisi",
       "Canlılar ve Çevre"
     ]},
-      {"ders":"Edebiyat",
+      {"ders":"AYT-Edebiyat",
           "konular": [
       "Anlam Bilgisi (Sözcükte, Cümlede ve Paragrafta Anlam)",
       "Edebî Bilgiler",
@@ -1837,7 +1831,7 @@
       "Çağdaş Türk Edebiyatı",
       "Eser Özetleri"
     ]},
-      {"ders":"Tarih",
+      {"ders":"AYT-Tarih",
           "konular": [
       "Atatürk’ün Ölümü",
       "20. yy Başlarında Dünya",
@@ -1853,7 +1847,7 @@
       "Türklerde Sanat",
       "Türklerde Spor"
     ]},
-      {"ders":"Coğrafya",
+      {"ders":"AYT-Coğrafya",
           "konular": [
       "Ekosistem",
       "Doğadaki Ekstrem Olaylar",
@@ -1873,7 +1867,7 @@
       "Çevre ve Toplum",
       "Doğal Afetler"
     ]},
-      {"ders":"Felsefe",
+      {"ders":"AYT-Felsefe",
           "konular": [
      "Felsefe’nin Alanı",
      "Bilgi Felsefesi",
@@ -1884,21 +1878,21 @@
      "Sanat Felsefesi",
      "Din Felsefesi"
     ]},
-      {"ders":"Mantık ",
+      {"ders":"AYT-Mantık ",
           "konular": [
       "Mantığa Giriş",
       "Klasik Mantık",
       "Mantık ve Dil",
       "Sembolik Mantık"
     ]},
-      {"ders":"Psikoloji ",
+      {"ders":"AYT-Psikoloji ",
           "konular": [
       "Psikoloji Bilimini Tanıyalım",
       "Psikolojinin Temel Süreçleri",
       "Öğrenme Bellek Düşünme",
       "Ruh Sağlığının Temelleri"
     ]},
-      {"ders":"Sosyolojiye Giriş",
+      {"ders":"AYT-Sosyoloji",
           "konular": [
       "Birey ve Toplum",
       "Toplumsal Yapı",
@@ -1906,7 +1900,7 @@
       "Toplum ve Kültür",
       "Toplumsal Kurumlar"
     ]},
-      {"ders":"Din Kültürü",
+      {"ders":"AYT-Din Kültürü",
           "konular": [
       "Dünya ve Ahiret",
       "Kur’an’a Göre Hz. Muhammed",

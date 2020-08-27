@@ -55,8 +55,6 @@ class Hosgeldiniz extends StatelessWidget{
         body: Center(
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-
-
             children: [
               SizedBox(
 
@@ -144,48 +142,63 @@ class _SiniflarState extends State<Siniflar>{
           title: Text("AKILLI REHBER"),
           centerTitle: true,
         ),
-        body: new Container(
+        body: Column(
 
-          alignment: Alignment.center,
-                  child: FutureBuilder(
-                      future: veriOku(),
-                      builder:(context, sonuc){
+          children:[
+            new Container(
+              child:  Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text('Bir sınıf seçiniz:',
+                      style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
+                ],
+              ),
+            ),
+            const SizedBox(height: 20),
+            new Container(
 
-                    if(sonuc.hasData){
-                      tumSiniflar = sonuc.data;
-                      return ListView.builder(
-                        shrinkWrap: true,
-                        itemBuilder: (context, index) {
+              alignment: Alignment.center,
+                      child: FutureBuilder(
+                          future: veriOku(),
+                          builder:(context, sonuc){
 
-                        return Padding(
-                          padding: const EdgeInsets.all(10.0),
-                          child: RaisedButton(
-                            padding: EdgeInsets.fromLTRB(0, 30, 0, 30),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20.0),
-                              side: BorderSide(color:Color(0xff6200ee)),
+                        if(sonuc.hasData){
+                          tumSiniflar = sonuc.data;
+                          return ListView.builder(
+                            shrinkWrap: true,
+                            itemBuilder: (context, index) {
 
-                            ),
-                            color: Color(0xff6200ee),
-                            textColor: Colors.white,
-                            onPressed: () {},
-                              child: Text(tumSiniflar[index]["sinif"],style: TextStyle(
-                                fontSize: 20,
-                              ),
-                              ),
+                            return Padding(
+                              padding: const EdgeInsets.fromLTRB(80, 10, 80, 10),
+                              child: RaisedButton(
+                                padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20.0),
+                                  side: BorderSide(color:Color(0xff6200ee)),
 
-                            ),
-                        );
+                                ),
+                                color: Color(0xff6200ee),
+                                textColor: Colors.white,
+                                onPressed: () {},
+                                  child: Text(tumSiniflar[index]["sinif"],style: TextStyle(
+                                    fontSize: 24,
+                                  ),
+                                  ),
+
+                                ),
+                            );
 
 
-                      },
-                      itemCount: tumSiniflar.length,
-                      );
-                    }else{
-                      return Center(child: CircularProgressIndicator(),);
-                    }
+                          },
+                          itemCount: tumSiniflar.length,
+                          );
+                        }else{
+                          return Center(child: CircularProgressIndicator(),);
+                        }
     }),
     ),
+          ],
+        ),
     ),
     );
     }
