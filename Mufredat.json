@@ -1,6 +1,9 @@
-{
-  "sinif9": {
-    "Türk Dili ve Edebiyatı": [
+[
+  { "sinif":"9. Sınıf"
+    "dersler":[
+      {
+        "ders":"Türk Dili ve Edebiyatı",
+        "konular": [
       "Edebiyat (Yazın)",
       "Edebiyat ve Bilim",
       "Edebiyatın Güzel Sanatlarla İlişkisi",
@@ -61,34 +64,39 @@
       "Blog",
       "Dil Bilgisi",
       "Günlük Yazma"
-    ],
-    "Dil ve Anlatım": [
-      "İletişim ",
-      "İnsan,İletişim ve Dil",
-      "Dil - Kültür İlişkisi",
-      "Dillerin Sınıflandırılması",
-      "Türk Dilinin Tarihî Gelişimi ve Türkiye Türkçesi ",
-      "Türkçenin Ses Özellikleri",
-      "Telaffuz (Söyleyiş)",
-      "Kelimede Anlam ve Kavram",
-      "Kelimelerin Farklı Anlamda Kullanımı",
-      "Anlam ilişkilerine Göre Kelimeler ",
-      "Kelimelerde Anlam Değişimleri",
-      "Kelime Gurupları",
-      "Cümlede Anlamın Oluşumu ",
-      "Bildirdikleri kiplere Göre Cümleler ",
-      "Haber Cümleleri",
-      "Dilek-İstek Cümleleri ",
-      "Haber ve Dilek Kiplerinde Soru",
-      "Haber ve Dilek Kiplerinde Olumluluık-Olumsuzluk",
-      "Metinde Kazandıkları Anlamlara göre Cümleler",
-      "Anlatım Birimi Olarak Paragraf",
-      "Paragrafta Yapı",
-      "Paragrafta Anlam ve Ana Düşünce ",
-      "Paragrafta Düşünceyi Geliştirme Yolları",
-      "Metin ve Paragraf"
-      ],
-    "Matematik": [
+    ]},
+      {
+        "ders":"Dil ve Anlatım",
+        "konular": [
+          "İletişim ",
+          "İnsan,İletişim ve Dil",
+          "Dil - Kültür İlişkisi",
+          "Dillerin Sınıflandırılması",
+          "Türk Dilinin Tarihî Gelişimi ve Türkiye Türkçesi ",
+          "Türkçenin Ses Özellikleri",
+          "Telaffuz (Söyleyiş)",
+          "Kelimede Anlam ve Kavram",
+          "Kelimelerin Farklı Anlamda Kullanımı",
+          "Anlam ilişkilerine Göre Kelimeler ",
+          "Kelimelerde Anlam Değişimleri",
+          "Kelime Gurupları",
+          "Cümlede Anlamın Oluşumu ",
+          "Bildirdikleri kiplere Göre Cümleler ",
+          "Haber Cümleleri",
+          "Dilek-İstek Cümleleri ",
+          "Haber ve Dilek Kiplerinde Soru",
+          "Haber ve Dilek Kiplerinde Olumluluık-Olumsuzluk",
+          "Metinde Kazandıkları Anlamlara göre Cümleler",
+          "Anlatım Birimi Olarak Paragraf",
+          "Paragrafta Yapı",
+          "Paragrafta Anlam ve Ana Düşünce ",
+          "Paragrafta Düşünceyi Geliştirme Yolları",
+          "Metin ve Paragraf"
+        ]
+      },
+      {
+        "ders":"Matematik",
+      "konular":[
       "Önerme ",
       "Bileşik Önermeler ",
       "Koşullu Önerme ve İki Yönlü Koşullu Önerme ",
@@ -129,8 +137,10 @@
       "Üçgenin Alanı ile İlgili Problemler ",
       "Bir Veri Grubuna İlişkin Histogram Grafiği ",
       "Gerçek Hayat Durumunu Yansıtan Veri Gruplarını Uygun Grafik Türlerini Çizerek Yorumlama "
-      ],
-    "Fizik": [
+      ]},
+      {
+        "ders":"Fizik",
+        "konular":[
       "Fiziğin Tanımı ve Önemi ",
       "Fiziğin Alt Dalları ",
       "Fiziğin Diğer Disiplinlerle İlişkisi ",
@@ -169,8 +179,10 @@
       "Topraklama ",
       "Coulomb Kuvveti ",
       "Elektrik Alan "
-      ],
-    "Kimya": [
+      ]},
+      {
+          "ders": "Kimya",
+          "konular": [
       "Kimyanın Bilim Olma Süreci ",
       "Kimyanın ve Kimyacıların Başlıca Çalışma Alanları ",
       "Kimyanın Sembolik Dili ",
@@ -207,8 +219,10 @@
       "Su Sertliği ",
       "Hava Su ve Toprak Kirliliğine Sebep Olan Kimyasallar ",
       "Çevreye Zarar Veren Kimyasal Kirleticilerin Etkilerinin Azaltılması "
-      ],
-    "Biyoloji": [
+      ]},
+      {
+        "ders": "Biyoloji",
+        "konular": [
       "Canlıların Ortak Özellikleri ",
       "İnorganik Bileşikler ",
       "Suyun Canlılar İçin Önemi ",
@@ -255,8 +269,10 @@
       "Hayvanların Biyolojik ve Ekonomik Önemi ",
       "Virüsler ",
       "Virüsler ve Sağlığımız "
-    ],
-    "Tarih": [
+    ]},
+      {
+        "ders": "Tarih",
+        "konular": [
       "İnsanlığın Hafızası Tarih ",
       "Neden Tarih? ",
       "Zamanın Taksimi ",
@@ -285,8 +301,10 @@
       "İslamiyet’in Türk Devlet ve Toplum Yapısına Etkisi",
       "Oğuzların İslamiyet’i Kabulü ",
       "Büyük Selçuklu Devleti’nde Yönetim ve Toplum Yapısı "
-    ],
-    "Coğrafya": [
+    ]},
+      {
+        "ders": "Coğrafya",
+        "konular": [
       "Doğa ve İnsan Etkileşimi ",
       "Bir Bilim Olarak Coğrafya ",
       "Dünya’nın Şekli ve Sonuçları ",
@@ -312,8 +330,10 @@
       "Ülkeler ve Bölgeler ",
       "Doğal Çevreyi Kullanma Biçimleri ",
       "Doğal Ortamda İnsan Etkileri "
-    ],
-    "Din ": [
+    ]},
+      {
+        "ders": "Din Kültürü",
+        "konular": [
       "İslam’da Bilgi Kaynakları ",
       "İslam İnancında İmanın Mahiyeti ",
       "Kur’an’dan Mesajlar: İsrâ Suresi 36. Ayet ve Mülk Suresi 23. Ayet ",
@@ -335,8 +355,10 @@
       "İslam Medeniyeti ve Özellikleri ",
       "İslam Medeniyetinin Farklı Coğrafyalardaki İzleri ",
       "Kur’an’dan Mesajlar: Hucurât Suresi 13. Ayet "
-    ],
-    "İngilizce": [
+    ]},
+      {
+        "ders": "İngilizce",
+        "konular": [
       "Studying Abroad ",
       "My Environment ",
       "Movies ",
@@ -347,10 +369,13 @@
       "Emergency And Health Problems ",
       "Invitations And Celebrations ",
       "Television And Social Media "
-    ],
-  },
-  "sinif10": {
-    "Türk Dili ve Edebiyatı": [
+    ]}
+    ]}, //9.Sınıf
+
+  {"sinif":"10. Sınıf",
+  "dersler":[
+    {"ders":"Türk Dili ve Edebiyatı",
+      "konular": [
       "Edebiyat-Tarih İlişkisi",
       "Din-Edebiyat İlişkisi",
       "Türk Edebiyatının Ana Dönemleri",
@@ -373,8 +398,9 @@
        "Anı(Hatıra)",
        "Haber Metni",
        "Gezi Yazısı"
-    ],
-    "Dil ve Anlatım": [
+    ]},
+    {"ders":"Dil ve Anlatım",
+      "konular": [
       "Sunum",
       "Tartışma",
       "Panel",
@@ -406,8 +432,9 @@
        "Söyleşmeye Bağlı (Diyalog) Anlatım",
        "Mizahi Anlatım",
        "Ünlem"
-    ],
-    "Matematik": [
+    ]},
+    {"ders":"Matematik",
+      "konular": [
        "Sayma",
        "Fonksiyonlarla İşlemler Ve Uygulamaları",
        "Dörtgenler ve Özellikleri",
@@ -417,8 +444,9 @@
        "Polinom Kavramı ve Polinomlarla İşlemler",
        "Polinomlarda Çarpanlarda Ayırma",
        "Katı Cisimlerin Yüzey Alanları ve Hacimleri"
-    ],
-    "Fizik": [
+    ]},
+    {"ders":"Fizik",
+      "konular": [
       "Elektrik Akımı, Direnç ve Potansiyel Farkı Kavramları",
       "Katı Bir İletkenin Direncinin Bağlı Olduğu Değişkenler",
       "Elektrik Akımı, Direnç ve Potansiyel Farkı Arasındaki İlişki",
@@ -458,8 +486,9 @@
        "Merceklerin Oluşturduğu Görüntünün Özellikleri",
        "Işık Prizmalarının Özellikleri",
        "Cisimlerin Renkli Görülmesinin Sebepleri"
-    ],
-    "Kimya ": [
+    ]},
+    {"ders":"Kimya",
+      "konular": [
       "Kütlenin Korunumu Kanunu (Antoine Laurent De Lavoiser-1774)",
       "Sabit Oranlar Kanunu (Joseph Proust-1779)",
       "Katlı Oranlar Kanunu (John Daltın-1804)",
@@ -518,8 +547,9 @@
        "Yağların Sınıflandırılması",
        "Yağ Endüstrisinde Kullanılan Kavramlar",
        "Yenilebilir Yağların Yanlış Kullanımı ve Sağlığa Etkileri"
-    ],
-    "Biyoloji ": [
+    ]},
+    {"ders":"Biyoloji",
+      "konular": [
       "Hücre Bölünmesinin Gereklikliği",
       "Mitoz",
       "İnterfaz",
@@ -578,8 +608,9 @@
        "Soyu Tükenen Türler",
        "Biyokaçakçılık",
        "Gen Bankaları"
-    ],
-    "Tarih": [
+    ]},
+    {"ders":"Tarih",
+      "konular": [
       "1072-1308 Yılları Arasındaki Başlıca Siyasi Gelişmeler",
       "Oğuz Göçleri ve Anadolu",
       "Anadolu'nun İlk Fatihleri",
@@ -613,8 +644,9 @@
        "Osmanlı'da Toprak Mülkiyeti ve Çifthane Sistemi",
        "Lonca Teşkilatı",
        "Osmanlı'da Vakıf Müessesesi"
-    ],
-    "Coğrafya": [
+    ]},
+    {"ders":"Coğrafya",
+      "konular": [
       "Dünya'nın İç Yapısı",
       "Levha Tektoniği",
       "Jeolojik Zamanlar",
@@ -648,8 +680,9 @@
        "Uluslararası Ulaşım hatlarının Genel Özellikleri ve Etkileri",
        "Afetlerin Genel Özellikleri",
        "Afetlerin Dağılışı ve Afetlerden Korunma Yolları"
-    ],
-    "Din Kültürü": [
+    ]},
+    {"ders":"Din Kültürü",
+      "konular": [
       "Allah İnancı ve İnsan",
       "Allah'ın Varlığı ve Birliği",
       "Allah'ın İsim ve Sıfatları",
@@ -679,8 +712,9 @@
        "İslam Düşüncesinde İtikadi ve Siyasi Yorumlar",
        "İslam Düşüncesinde Fıkhi Yorumlar",
        "Kur'an'dan Mesajlar: Nisâ Suresi 59. Ayet"
-    ],
-    "İngilizce": [
+    ]},
+    {"ders":"İngilizce",
+      "konular": [
       "School Life",
       "Plans",
       "Legendary Figures",
@@ -691,417 +725,437 @@
       "Digital Era",
       "Modern Heroes and Heroines",
        "Shopping"
+    ]}
+  ]
+  },//10.Sınıf
+
+  {
+    "sinif":"11. Sınıf",
+    "dersler": [
+      {"ders":"Türk Dili ve Edebiyatı",
+        "konular": [
+        "Edebiyatın Sanat Akımları ile İlişkisi",
+        "Dil Bilgisi",
+        "Yazma Süreci",
+        "Cumhuriyet Dönemi’nde Hikâye (1923-1940)",
+        "Cumhuriyet Dönemi’nde Hikâye (1940-1960)",
+        "Toplumcu Gerçekçilik",
+        "Dil Bilgisi",
+        "Hikâye Yazma Aşamaları",
+        "Tanzimat Dönemi Şiiri",
+        "Servetifünun Dönemi Şiiri",
+        "Saf Şiir",
+        "Millî Edebiyat Dönemi Şiiri",
+        "Cumhuriyet Dönemi’nin İlk Yıllarında Şiir",
+        "Türkiye Dışındaki Çağdaş Türk Şiiri",
+        "Dil Bilgisi",
+        "Hazırlıklı Konuşma",
+        "Makale",
+        "Dil Bilgisi",
+        "Araştırmaya Dayalı Metin Yazma Aşamaları",
+        "Münazara",
+        "Münazaranın Aşamaları",
+        "Sohbet",
+        "Cumhuriyet Öncesinde Sohbet",
+        "Cumhuriyet Dönemi’nde Sohbet",
+        "Fıkra",
+        "Cumhuriyet Öncesinde Fıkra",
+        "Cumhuriyet Dönemi’nde Fıkra",
+        "Dil Bilgisi",
+        "Sohbet ve Fıkra Yazma Aşamaları",
+        "Türklerde Sohbet Kültürü",
+        "Cumhuriyet Dönemi’nde Roman (1923-1950)",
+        "Cumhuriyet Dönemi’nde Roman (1950-1980)",
+        "Modernizm Akımı",
+        "Dünya Edebiyatında Roman",
+        "Dil Bilgisi",
+        "Cumhuriyet Dönemi’nde Tiyatro (1923-1950)",
+        "Cumhuriyet Dönemi’nde Tiyatro (1950-1980)",
+        "Dünya Edebiyatında Tiyatro",
+        "Temel Tiyatro Terimleri",
+        "Dil Bilgisi",
+        "Eleştiri",
+        "Cumhuriyet Öncesinde Eleştiri",
+        "Cumhuriyet Dönemi’nde Eleştiri",
+        "Dil Bilgisi",
+        "Eleştiri Yazma Aşamaları",
+        "Mülakat",
+        "Cumhuriyet Öncesinde Mülakat",
+        "Cumhuriyet Dönemi’nde Mülakat",
+        "Röportaj",
+        "Cumhuriyet Dönemi’nde Röportaj",
+        "Dil Bilgisi",
+        "Mülakat Yazma Aşamaları"
+      ]},
+      {"ders":"Dil ve Anlatım",
+        "konular": [
+        "Mektup",
+        "Günlük (Günce)",
+        "Anı (Hatıra)",
+        "Biyografi (Hayat Hikayesi), Otobiyografi",
+        "Gezi Yazısı (Seyahatname)",
+        "Sohbet(Söyleşi)",
+        "Fıkra",
+        "Deneme",
+        "Makale",
+        "Eleştiri (Tenkit)",
+        "Röportaj",
+        "Mülakat (Görüşme)",
+        "Söylev (Hitabet, Nutuk)"
+      ]},
+      {"ders":"Matematik",
+        "konular": [
+        "Yönlü Açı",
+        "Açı Ölçü Birimleri",
+        "Trigonometrik Fonksiyonlar",
+        "Trigonometrik Fonksiyonların Birim Çember Yardımıyla Açıklanması",
+        "Kosinüs Teoremi",
+        "Sinüs Teoremi",
+        "Trigonometrik Fonksiyonların Grafikleri",
+        "Ters Trigonometrik Fonksiyonlar",
+        "Doğrunun Analitik İncelenmesi",
+        "Analitik Düzlemde İki Nokta Arasındaki Uzaklık",
+        "Doğru Parçasını Belli Bir Oranda Bölen Noktanın Koordinatları",
+        "Analitik Düzlemde Doğrular",
+        "Bir Noktanın Bir Doğruya Uzaklığı",
+        "Fonksiyonlarla İlgili Uygulamalar",
+        "Fonksiyonun Grafik ve Tablo Temsilini Kullanarak Problem Çözme",
+        "İkinci Dereceden Fonksiyonlar ve Grafikleri",
+        "İkinci Dereceden Bir Değişkenli Fonksiyon Grafiğinin Çizimi",
+        "İkinci Dereceden Fonksiyonlarla Modellenebilen Problemler",
+        "Fonksiyonların Dönüşümleri",
+        "İkinci Dereceden İki Bilinmeyenli Denklem Sistemleri",
+        "İkinci Dereceden İki Bilinmeyenli Denklem Sistemlerinin Çözüm Kümesi",
+        "İkinci Dereceden Bir Bilinmeyenli Eşitsizlikler ve Eşitsizlik Sistemleri",
+        "İkinci Dereceden Bir Bilinmeyenli Eşitsizliklerin Çözüm Kümesi",
+        "İkinci Dereceden Bir Bilinmeyenli Eşitsizlik Sistemlerinin Çözüm Kümesi",
+        "Çemberin Temel Elemanları",
+        "Çemberde Teğet, Kiriş, Çap, Yay ve Kesen",
+        "Çemberde Kirişin Özellikleri",
+        "Çemberde Açılar",
+        "Bir Çemberde Merkez Açı, Çevre Açı, İç Açı ve Teğet-Kiriş Açı",
+        "Çemberde Teğet",
+        "Çemberde Teğetin Özellikleri",
+        "Dairenin Çevresi ve Alanı",
+        "Dairenin Çevre ve Alan Bağıntıları",
+        "Katı Cisimler",
+        "Dik Dairesel Silindir, Dik Dairesel Koni, Kürenin Alan ve Hacim Bağıntıları",
+        "Koşullu Olasılık",
+        "Koşullu Olasılık",
+        "Bağımlı ve Bağımsız Olaylar",
+        "Bileşik Olaylar",
+        "Deneysel ve Teorik Olasılık",
+        "Deneysel Olasılık ile Teorik Olasılığın İlişkilendirilmesi"
+      ]},
+      {"ders":"Geometri",
+        "konular": [
+        "Açı Ölçü Birimleri",
+        "Trigonometrik Fonksiyonlar",
+        "Trigonometrik Fonksiyonların Birim Çember Yardımıyla Açıklanması",
+        "Kosinüs Teoremi",
+        "Sinüs Teoremi",
+        "Trigonometrik Fonksiyonların Grafikleri",
+        "Ters Trigonometrik Fonksiyonlar",
+        "Doğrunun Analitik İncelenmesi",
+        "Analitik Düzlemde İki Nokta Arasındaki Uzaklık",
+        "Doğru Parçasını Belli Bir Oranda Bölen Noktanın Koordinatları",
+        "Analitik Düzlemde Doğrular",
+        "Bir Noktanın Bir Doğruya Uzaklığı",
+        "Çemberin Temel Elemanları",
+        "Çemberde Teğet, Kiriş, Çap, Yay ve Kesen",
+        "Çemberde Kirişin Özellikleri",
+        "Çemberde Açılar",
+        "Bir Çemberde Merkez Açı, Çevre Açı, İç Açı ve Teğet-Kiriş Açı",
+        "Çemberde Teğet",
+        "Çemberde Teğetin Özellikleri",
+        "Dairenin Çevresi ve Alanı",
+        "Dairenin Çevre ve Alan Bağıntıları",
+        "Katı Cisimler",
+        "Dik Dairesel Silindir, Dik Dairesel Koni, Kürenin Alan ve Hacim Bağıntıları"
+      ]},
+      {"ders":"Fizik",
+        "konular": [
+        "Vektörlerin Özellikleri",
+        "İki ve Üç Boyutlu Kartezyen Koordinat Sisteminde Vektör Çizimi",
+        "Vektörlerin Bileşkesinin Bulunması",
+        "Vektörün İki Boyutlu Kartezyen Koordinat Sistemindeki Bileşenleri",
+        "Bağıl Hareket",
+        "Sabit Hızlı Hareketlilerin Bağıl Hareketi",
+        "Hareketli Bir Ortamdaki Sabit Hızlı Cisimlerin Bağıl Hareketi",
+        "Newton’ın Hareket Yasaları",
+        "Sürtünmesiz Düzlemde Serbest Cisim Diyagramı ve Net Kuvvetin Hesaplanması",
+        "Sürtünmeli Düzlemde Serbest Cisim Diyagramı ve Net Kuvvetin Hesaplanması",
+        "Bir Boyutta Sabit İvmeli Hareket",
+        "Bir Boyutta Sabit İvmeli Hareketin Grafik ve Denklemleri",
+        "Bir Boyutta Sabit İvmeli Hareket Grafikleri ve Hesaplamaları",
+        "Hava Direncinin İhmal Edildiği Ortamlardaki Serbest Düşme Hareketi",
+        "Atmosferdeki Serbest Düşme Hareketi",
+        "Limit Hız",
+        "Düşey Doğrultuda Atış Hareketi Denklem ve Grafikleri",
+        "İki Boyutta Hareket",
+        "Yatay Atış Hareketi Denklem ve Grafikleri",
+        "Eğik Atış Hareketi Denklem ve Grafikleri",
+        "Enerji ve Hareket",
+        "İş-Kinetik Enerji Dönüşümü",
+        "Mekanik Enerji",
+        "Sürtünmeli Yüzeylerde Enerji Korunumu ve Dönüşümleri",
+        "İtme ve Çizgisel Momentum",
+        "İtme",
+        "Çizgisel Momentum",
+        "Çizgisel Momentumun Korunumu",
+        "Çarpışmalar ve Çizgisel Momentumun Korunumu",
+        "Tork",
+        "Denge ve Denge Şartları",
+        "Cisimlerin Denge Şartı",
+        "Ağırlık Merkezi ve Kütle Merkezi",
+        "Basit Makineler",
+        "Günlük Hayatta Kullanılan Basit Makineler",
+        "Elektriksel Kuvvet ve Elektrik Alan",
+        "Yüklü Cisimler Arasındaki Elektriksel Kuvvet",
+        "Noktasal Yük İçin Elektrik Alan",
+        "Noktasal Yüklerde Elektriksel Kuvvet ve Elektrik Alan İle İlgili Hesaplamalar Elektriksel Potansiyel",
+        "Noktasal Yükler İçin Elektriksel Potansiyel ile İlgili Kavramlar",
+        "Düzgün Elektrik Alan İçinde İki Nokta Arasındaki Elektriksel Potansiyel Farkı",
+        "Elektriksel Potansiyel ile İlgili Hesaplamalar",
+        "Düzgün Elektrik Alan ve Sığa",
+        "Yüklü İletken ve Paralel Levhalar Arasındaki Elektrik Alan",
+        "Yüklü, İletken ve Paralel Levhalar Arasında Oluşan Elektrik Alanının Bağlı Olduğu",
+        "Değişkenler",
+        "Yüklü Parçacıkların Düzgün Elektrik Alanındaki Davranışı",
+        "Sığa (Kapasite)",
+        "Sığanın Bağlı Olduğu Değişkenler",
+        "Kondansatörün İşlevi",
+        "Yüklenmiş Bir Sığaçta Yük Ve Gerilim",
+        "Sığaçta Depolanan Enerji",
+        "Kondansatörlerde Eşdeğer Sığa, Yük Ve Potansiyel Farkı",
+        "Sığaç Modeli",
+        "Manyetizma ve Elektromanyetik İndüklenme",
+        "Üzerinden Akım Geçen Telin Oluşturduğu Manyetik Alan",
+        "İletken Tel Üzerinden Geçen Akımın Oluşturduğu Manyetik Alanla İlgili Hesaplamalar",
+        "Üzerinden Akım Geçen İletken Düz Tele Manyetik Alanda Etki Eden Kuvvet",
+        "Manyetik Alan İçerisinde Akım Taşıyan Dikdörtgen Tel Çerçeveye Etki Eden Kuvvetlerin",
+        "Döndürme Etkisi"
+      ]},
+      {"ders":"Kimya",
+        "konular": [
+        "Bohr Atom Modelinin Sınırlılıkları",
+        "Modern Atom Modeli ve Orbital Kavramı",
+        "Yörünge ve Orbital Kavramları",
+        "Kuantum Sayıları",
+        "Çok Elektronlu Atomlarda Orbitallerin Enerji Seviyeleri",
+        "Nötr Atomların Elektron Dizilimleri ve Periyodik Sistemdeki Yerleri",
+        "Hund Kuralı",
+        "Pauli İlkesi",
+        "Aufbau Kuralı",
+        "Atomların Elektron Dizilimleri",
+        "Periyodik Özellikler",
+        "Periyodik Özelliklerdeki Değişim Eğilimleri",
+        "Periyodik Özellikler",
+        "Elementleri Tanıyalım",
+        "Elementlerin Periyodik Sistemdeki Konumu ve Özellikleri",
+        "S Bloku Elementleri ve Özellikleri",
+        "P Bloku Elementleri ve Özellikleri",
+        "D Bloku Elementleri ve Özellikleri",
+        "F Bloku Elementleri ve Özellikleri",
+        "Asal Gaz Özellikleri ve Elektron Dizilimi",
+        "Yükseltgenme Basamakları",
+        "Yükseltgenme Basamakları ve Elektron Dizilimleri",
+        "D Bloku Elementlerinin Yükseltgenme Basamakları",
+        "Gazlar",
+        "Gazların Özellikleri ve Gaz Yasaları",
+        "Gazların Betimlenmesinde Kullanılan Özellikler Ve Ölçülmesi",
+        "Gaz Yasaları",
+        "Boyle Yasası (Basınç-Hacim İlişkisi)",
+        "Charles Yasası (Hacim-Sıcaklık İlişkisi)",
+        "Gay-Lussac Yasası (Basınç-Sıcaklık İlşikisi)",
+        "Avogadro Yasası (Mol Sayısı-Hacim İlişkisi)",
+        "Gaz Yasalarının Grafiklerle Yorumlanması",
+        "İdeal Gaz Yasası",
+        "Gaz Yasaları ve İdeal Gaz Yasası",
+        "Gazlarda Kinetik Teori",
+        "Kinetik Teori",
+        "Graham Difüzyon Yasası",
+        "Gaz Karışımları",
+        "Kısmi Basınç",
+        "Gerçek Gazlar",
+        "Gerçek Gaz ve İdeal Gaz",
+        "Sıvı Çözeltiler ve Çözünürlük",
+        "Çözücü Çözünen Etkileşimleri",
+        "Çözücü-Çözünen Etkileşimleri",
+        "Derişim Birimleri",
+        "Çözünen Madde Miktarı ve Derişim Birimleri",
+        "Molarite",
+        "Molalite",
+        "Farklı Derişimlerde Çözelti Hazırlanması",
+        "Derişimle İlgili Hesaplamalar",
+        "Koligatif Özellikler",
+        "Çözeltilerin Koligatif Özellikleri ve Derişimleri",
+        "Buhar Basıncı Alçalması",
+        "Kaynama Noktası Yükselmesi (Ebülyoskopi)",
+        "Donma Noktası Alçalması (Kriyoskopi)",
+        "Ters Ozmoz Yöntemiyle Su Arıtımı",
+        "Çözünürlük",
+        "Çözeltilerin Sınıflandırılması",
+        "Çözünürlük Hesaplamaları",
+        "Çözünürlüğe Etki Eden Faktörler"
+      ]},
+      {"ders":"Biyoloji",
+        "konular": [
+        "Endokrin Bezler ve Salgıladıkları Hormonlar",
+        "Sinir Sistemi Rahatsızlıkları",
+        "Sinir Sisteminin Sağlıklı Yapısının Korunması",
+        "Duyu Organlarının Yapısı ve İşleyişi",
+        "Duyu Organlarının Sağlıklı Yapısının Korunması",
+        "Destek ve Hareket Sisteminin Yapısı, Görevi ve İşleyişi",
+        "Destek ve Hareket Sistemi Rahatsızlıkları",
+        "Destek ve Hareket Sisteminin Sağlıklı Yapısının Korunması",
+        "Sindirim Sisteminin Yapısı, Görevi ve İşleyişi",
+        "Sindirim Sistemi Rahatsızlıkları",
+        "Sindirim Sisteminin Sağlıklı Yapısının Korunması",
+        "Bölüm Dolaşım Sistemleri",
+        "Kalbin, Damarların ve Kanın Yapısı, Görevi ve İşleyişi",
+        "Lenf Dolaşımı",
+        "Dolaşım Sistemi Rahatsızlıkları",
+        "Dolaşım Sisteminin Sağlıklı Yapısının Korunması",
+        "Solunum Sisteminin Yapısı, Görevi ve İşleyişi",
+        "Alveollerden Dokulara ve Dokulardan Alveollere Gaz Taşınması",
+        "Solunum Sistemi Rahatsızlıkları",
+        "Solunum Sisteminin Sağlıklı Yapısının Korunması",
+        "Bölüm Üriner Sistem",
+        "Üriner Sistemin Yapısı, Görevi ve İşleyişi",
+        "Homeostasinin Sağlanmasında Böbreklerin Rolü",
+        "Üriner Sistem Rahatsızlıkları",
+        "Üriner Sistemin Sağlıklı Yapısının Korunması",
+        "Üreme Sisteminin Yapısı, Görevi ve İşleyişi",
+        "Üreme Sisteminin Sağlıklı Yapısının Korunması",
+        "İnsanda Embriyonik Gelişim Süreci",
+        "Bölüm Komünite Ekolojisi",
+        "Komünitenin Yapısına Etki Eden Faktörler",
+        "Komünitede Tür İçi ve Türler Arasındaki Rekabet",
+        "Komünitede Türler Arasında Simbiyotik İlişkiler",
+        "Komünitelerdeki Süksesyon",
+        "Popülasyonun Yapısı ve Dinamikleri"
+      ]},
+      {"ders":"Tarih",
+        "konular": [
+        "1595-1700 Yılları Arasındaki Siyasi Gelişmeler",
+        "Uzun Savaşlardan Diplomasiye",
+        "Avrupa’da Din Savaşlarından Modern Devlete",
+        "XVII ve XVIII. Yüzyıllarda Osmanlı Devleti’nde ve Avrupa’da Denizcilik Faaliyetleri",
+        "Fetihlerden Savunmaya",
+        "Avrupa'da Değişim Çağı",
+        "Osmanlı Devleti'nde Değişim",
+        "Osmanlı Devleti’nde İsyanlar ve Düzeni Koruma Çabaları",
+        "XVIII-XX. Yüzyıl Siyasi Gelişmeleri (1774-1914)",
+        "Osmanlı Topraklarını Paylaşma Mücadelesi",
+        "Mehmet Ali Paşa’nın Güç Kazanması",
+        "Osmanlı-Rusya Rekabeti (1768-1914)",
+        "İhtilaller Çağı",
+        "Osmanlı Devleti’nde Modern Orduya Geçiş",
+        "Yüzyılda Sosyal Hayattaki Değişimler",
+        "Osmanlı Devleti’nde Demokratikleşme Hareketleri",
+        "Osmanlı Devleti’nde Darbeler",
+        "El Emeğinden Makineleşmeye",
+        "Osmanlı Devleti’nde Sanayileşme Çabaları",
+        "Ekonomiyi Düzeltme Çabaları",
+        "Ulus Devlete Giden Süreçte Nüfus",
+        "Modern Hayattaki Sosyal Değişim"
+      ]},
+      {"ders":"Coğrafya",
+        "konular": [
+        "Ekosistemlerin Özellikleri ve İşleyişi",
+        "Biyoçeşitlilik",
+        "Ekosistemlerin Unsurları",
+        "Enerji Akışı ve Madde Döngüleri",
+        "Besin Zinciri ve Enerji Akışı",
+        "Madde Döngüleri",
+        "Su Ekosistemleri",
+        "Nüfus Politikaları",
+        "Ülkelerin Nüfus Politikaları",
+        "Türkiye’de Nüfus Politikaları ve Bu Politikaların Etkileri",
+        "Türkiye’de Nüfus Politikaları",
+        "Türkiye Nüfusunun Geleceği",
+        "Yerleşmelerin Özellikleri",
+        "Şehirlerin Fonksiyonları ve Değişimi",
+        "Şehirlerin Etki Alanları",
+        "Türkiye’de Yerleşmeler",
+        "Türkiye’de Şehirlerin Fonksiyonları",
+        "Türkiye’de Kırsal Yerleşme Tipleri",
+        "Ekonomik Faaliyetler ve Doğal Kaynaklar",
+        "Üretim, Dağıtım ve Tüketimi Etkileyen Faktörler",
+        "Üretim, Dağıtım ve Tüketim Sektörlerinin Ekonomiye Etkileri",
+        "Doğal Kaynaklar ve Ekonomi",
+        "Dünyada Doğal Kaynak-Ekonomi İlişkisi",
+        "Türkiye’de Doğal Kaynak-Ekonomi İlişkisi",
+        "Türkiye’de Ekonomi",
+        "Türkiye Ekonomi Politikaları",
+        "Türkiye Ekonomisinin Sektörel Dağılımı",
+        "Türkiye’de Tarım",
+        "Türkiye’de Madenler ve Enerji Kaynakları",
+        "Türkiye’de Sanayi",
+        "Kültür Bölgeleri",
+        "İlk Kültür Merkezleri",
+        "Kültür Bölgelerinin Oluşumu ve Dağılışı",
+        "Türk Kültürü",
+        "Anadolu’nun Kültürel Özellikleri",
+        "Bölüm: Küreselleşen Dünya",
+        "Küresel Ticaret",
+        "Turizm",
+        "Sanayileşme Süreci: Almanya",
+        "Tarım-Ekonomi İlişkisi: Fransa Ve Somali",
+        "Uluslararası Örgütler",
+        "Çevre Sorunları",
+        "Çevre Sorunları ve Türleri",
+        "Madenler ve Enerji Kaynaklarına Ait Kullanımın Çevresel Etkileri",
+        "Doğal Kaynak Kullanımının Çevresel Etkileri",
+        "Arazi Kullanımının Çevresel Etkileri",
+        "Küresel Çevre Sorunları",
+        "Doğal Kaynakların Sürdürülebilir Kullanımı"
+      ]},
+      {"ders":"Din Kültürü",
+        "konular": [
+        "Ahiret Âlemi",
+        "Ahirete Uğurlama",
+        "Kur’an’dan Mesajlar: Bakara Suresi 153-157. Ayetler",
+        "Hz. Muhammed’in Şahsiyeti",
+        "Hz. Muhammed’in Peygamberlik Yönü",
+        "Hz. Muhammed’e Bağlılık ve İtaat",
+        "Kur’an’dan Mesajlar: Ahzâb Suresi 25, 45 ve 46. Ayetler",
+        "İslam’ın Aydınlık Yolu: Hidayet",
+        "Allah’ı Görüyormuşçasına Yaşamak: İhsan",
+        "Allah İçin Samimiyet: İhlas",
+        "Allah’ın Emir ve Yasaklarına Riayet: Takva",
+        "Dosdoğru Yol: Sırat-ı Müstakim",
+        "Allah Yolunda Mücahede: Cihat",
+        "İyi, Doğru ve Güzel Davranış: Salih Amel",
+        "Kur’an’dan Mesajlar: Kehf Suresi 107-110. Ayetler",
+        "İnançla İlgili Felsefi Yaklaşımlar",
+        "Yeni Dinî Hareketler",
+        "Kur’an’dan Mesajlar: En’âm Suresi 59. Ayet ve Lokmân Suresi 27. Ayet",
+        "Yahudilik",
+        "Hristiyanlık"
+      ]},
+      {"ders":"İngilzce",
+        "konular": [
+        "Future Jobs",
+        "Hobbies And Skills",
+        "Hard Times",
+        "What A Life!",
+        "Back To The Past",
+        "Open Your Heart",
+        "Facts About Turkey",
+        "Sports",
+        "My Friends",
+        "Values And Norms"
+      ]}
     ]
-  },
-  "sinif11": {
-    "Türk Dili ve Edebiyatı": [
-      "Edebiyatın Sanat Akımları ile İlişkisi",
-      "Dil Bilgisi",
-      "Yazma Süreci",
-      "Cumhuriyet Dönemi’nde Hikâye (1923-1940)",
-      "Cumhuriyet Dönemi’nde Hikâye (1940-1960)",
-      "Toplumcu Gerçekçilik",
-      "Dil Bilgisi",
-      "Hikâye Yazma Aşamaları",
-      "Tanzimat Dönemi Şiiri",
-       "Servetifünun Dönemi Şiiri",
-       "Saf Şiir",
-       "Millî Edebiyat Dönemi Şiiri",
-       "Cumhuriyet Dönemi’nin İlk Yıllarında Şiir",
-       "Türkiye Dışındaki Çağdaş Türk Şiiri",
-       "Dil Bilgisi",
-       "Hazırlıklı Konuşma",
-       "Makale",
-       "Dil Bilgisi",
-       "Araştırmaya Dayalı Metin Yazma Aşamaları",
-       "Münazara",
-       "Münazaranın Aşamaları",
-       "Sohbet",
-       "Cumhuriyet Öncesinde Sohbet",
-       "Cumhuriyet Dönemi’nde Sohbet",
-       "Fıkra",
-       "Cumhuriyet Öncesinde Fıkra",
-       "Cumhuriyet Dönemi’nde Fıkra",
-       "Dil Bilgisi",
-       "Sohbet ve Fıkra Yazma Aşamaları",
-       "Türklerde Sohbet Kültürü",
-       "Cumhuriyet Dönemi’nde Roman (1923-1950)",
-       "Cumhuriyet Dönemi’nde Roman (1950-1980)",
-       "Modernizm Akımı",
-       "Dünya Edebiyatında Roman",
-       "Dil Bilgisi",
-       "Cumhuriyet Dönemi’nde Tiyatro (1923-1950)",
-       "Cumhuriyet Dönemi’nde Tiyatro (1950-1980)",
-       "Dünya Edebiyatında Tiyatro",
-       "Temel Tiyatro Terimleri",
-       "Dil Bilgisi",
-       "Eleştiri",
-       "Cumhuriyet Öncesinde Eleştiri",
-       "Cumhuriyet Dönemi’nde Eleştiri",
-       "Dil Bilgisi",
-       "Eleştiri Yazma Aşamaları",
-       "Mülakat",
-       "Cumhuriyet Öncesinde Mülakat",
-       "Cumhuriyet Dönemi’nde Mülakat",
-       "Röportaj",
-       "Cumhuriyet Dönemi’nde Röportaj",
-       "Dil Bilgisi",
-       "Mülakat Yazma Aşamaları"
-    ],
-    "Dil ve Anlatım": [
-      "Mektup",
-      "Günlük (Günce)",
-      "Anı (Hatıra)",
-      "Biyografi (Hayat Hikayesi), Otobiyografi",
-      "Gezi Yazısı (Seyahatname)",
-      "Sohbet(Söyleşi)",
-      "Fıkra",
-      "Deneme",
-      "Makale",
-       "Eleştiri (Tenkit)",
-       "Röportaj",
-       "Mülakat (Görüşme)",
-       "Söylev (Hitabet, Nutuk)"
-    ],
-    "Matematik": [
-      "Yönlü Açı",
-      "Açı Ölçü Birimleri",
-      "Trigonometrik Fonksiyonlar",
-      "Trigonometrik Fonksiyonların Birim Çember Yardımıyla Açıklanması",
-      "Kosinüs Teoremi",
-      "Sinüs Teoremi",
-      "Trigonometrik Fonksiyonların Grafikleri",
-      "Ters Trigonometrik Fonksiyonlar",
-      "Doğrunun Analitik İncelenmesi",
-       "Analitik Düzlemde İki Nokta Arasındaki Uzaklık",
-       "Doğru Parçasını Belli Bir Oranda Bölen Noktanın Koordinatları",
-       "Analitik Düzlemde Doğrular",
-       "Bir Noktanın Bir Doğruya Uzaklığı",
-       "Fonksiyonlarla İlgili Uygulamalar",
-       "Fonksiyonun Grafik ve Tablo Temsilini Kullanarak Problem Çözme",
-       "İkinci Dereceden Fonksiyonlar ve Grafikleri",
-       "İkinci Dereceden Bir Değişkenli Fonksiyon Grafiğinin Çizimi",
-       "İkinci Dereceden Fonksiyonlarla Modellenebilen Problemler",
-       "Fonksiyonların Dönüşümleri",
-       "İkinci Dereceden İki Bilinmeyenli Denklem Sistemleri",
-       "İkinci Dereceden İki Bilinmeyenli Denklem Sistemlerinin Çözüm Kümesi",
-       "İkinci Dereceden Bir Bilinmeyenli Eşitsizlikler ve Eşitsizlik Sistemleri",
-       "İkinci Dereceden Bir Bilinmeyenli Eşitsizliklerin Çözüm Kümesi",
-       "İkinci Dereceden Bir Bilinmeyenli Eşitsizlik Sistemlerinin Çözüm Kümesi",
-       "Çemberin Temel Elemanları",
-       "Çemberde Teğet, Kiriş, Çap, Yay ve Kesen",
-       "Çemberde Kirişin Özellikleri",
-       "Çemberde Açılar",
-       "Bir Çemberde Merkez Açı, Çevre Açı, İç Açı ve Teğet-Kiriş Açı",
-       "Çemberde Teğet",
-       "Çemberde Teğetin Özellikleri",
-       "Dairenin Çevresi ve Alanı",
-       "Dairenin Çevre ve Alan Bağıntıları",
-       "Katı Cisimler",
-       "Dik Dairesel Silindir, Dik Dairesel Koni, Kürenin Alan ve Hacim Bağıntıları",
-       "Koşullu Olasılık",
-       "Koşullu Olasılık",
-       "Bağımlı ve Bağımsız Olaylar",
-       "Bileşik Olaylar",
-       "Deneysel ve Teorik Olasılık",
-       "Deneysel Olasılık ile Teorik Olasılığın İlişkilendirilmesi"
-    ],
-    "Geometri": [
-      "Açı Ölçü Birimleri",
-      "Trigonometrik Fonksiyonlar",
-      "Trigonometrik Fonksiyonların Birim Çember Yardımıyla Açıklanması",
-      "Kosinüs Teoremi",
-      "Sinüs Teoremi",
-      "Trigonometrik Fonksiyonların Grafikleri",
-      "Ters Trigonometrik Fonksiyonlar",
-      "Doğrunun Analitik İncelenmesi",
-      "Analitik Düzlemde İki Nokta Arasındaki Uzaklık",
-       "Doğru Parçasını Belli Bir Oranda Bölen Noktanın Koordinatları",
-       "Analitik Düzlemde Doğrular",
-       "Bir Noktanın Bir Doğruya Uzaklığı",
-       "Çemberin Temel Elemanları",
-       "Çemberde Teğet, Kiriş, Çap, Yay ve Kesen",
-       "Çemberde Kirişin Özellikleri",
-       "Çemberde Açılar",
-       "Bir Çemberde Merkez Açı, Çevre Açı, İç Açı ve Teğet-Kiriş Açı",
-       "Çemberde Teğet",
-       "Çemberde Teğetin Özellikleri",
-       "Dairenin Çevresi ve Alanı",
-       "Dairenin Çevre ve Alan Bağıntıları",
-       "Katı Cisimler",
-       "Dik Dairesel Silindir, Dik Dairesel Koni, Kürenin Alan ve Hacim Bağıntıları"
-    ],
-    "Fizik": [
-      "Vektörlerin Özellikleri",
-      "İki ve Üç Boyutlu Kartezyen Koordinat Sisteminde Vektör Çizimi",
-      "Vektörlerin Bileşkesinin Bulunması",
-      "Vektörün İki Boyutlu Kartezyen Koordinat Sistemindeki Bileşenleri",
-      "Bağıl Hareket",
-      "Sabit Hızlı Hareketlilerin Bağıl Hareketi",
-      "Hareketli Bir Ortamdaki Sabit Hızlı Cisimlerin Bağıl Hareketi",
-      "Newton’ın Hareket Yasaları",
-      "Sürtünmesiz Düzlemde Serbest Cisim Diyagramı ve Net Kuvvetin Hesaplanması",
-       "Sürtünmeli Düzlemde Serbest Cisim Diyagramı ve Net Kuvvetin Hesaplanması",
-       "Bir Boyutta Sabit İvmeli Hareket",
-       "Bir Boyutta Sabit İvmeli Hareketin Grafik ve Denklemleri",
-       "Bir Boyutta Sabit İvmeli Hareket Grafikleri ve Hesaplamaları",
-       "Hava Direncinin İhmal Edildiği Ortamlardaki Serbest Düşme Hareketi",
-       "Atmosferdeki Serbest Düşme Hareketi",
-       "Limit Hız",
-       "Düşey Doğrultuda Atış Hareketi Denklem ve Grafikleri",
-       "İki Boyutta Hareket",
-       "Yatay Atış Hareketi Denklem ve Grafikleri",
-       "Eğik Atış Hareketi Denklem ve Grafikleri",
-       "Enerji ve Hareket",
-       "İş-Kinetik Enerji Dönüşümü",
-       "Mekanik Enerji",
-       "Sürtünmeli Yüzeylerde Enerji Korunumu ve Dönüşümleri",
-       "İtme ve Çizgisel Momentum",
-       "İtme",
-       "Çizgisel Momentum",
-       "Çizgisel Momentumun Korunumu",
-       "Çarpışmalar ve Çizgisel Momentumun Korunumu",
-       "Tork",
-       "Denge ve Denge Şartları",
-       "Cisimlerin Denge Şartı",
-       "Ağırlık Merkezi ve Kütle Merkezi",
-       "Basit Makineler",
-       "Günlük Hayatta Kullanılan Basit Makineler",
-       "Elektriksel Kuvvet ve Elektrik Alan",
-       "Yüklü Cisimler Arasındaki Elektriksel Kuvvet",
-       "Noktasal Yük İçin Elektrik Alan",
-       "Noktasal Yüklerde Elektriksel Kuvvet ve Elektrik Alan İle İlgili Hesaplamalar Elektriksel Potansiyel",
-       "Noktasal Yükler İçin Elektriksel Potansiyel ile İlgili Kavramlar",
-       "Düzgün Elektrik Alan İçinde İki Nokta Arasındaki Elektriksel Potansiyel Farkı",
-       "Elektriksel Potansiyel ile İlgili Hesaplamalar",
-       "Düzgün Elektrik Alan ve Sığa",
-       "Yüklü İletken ve Paralel Levhalar Arasındaki Elektrik Alan",
-       "Yüklü, İletken ve Paralel Levhalar Arasında Oluşan Elektrik Alanının Bağlı Olduğu",
-       "Değişkenler",
-       "Yüklü Parçacıkların Düzgün Elektrik Alanındaki Davranışı",
-       "Sığa (Kapasite)",
-       "Sığanın Bağlı Olduğu Değişkenler",
-       "Kondansatörün İşlevi",
-       "Yüklenmiş Bir Sığaçta Yük Ve Gerilim",
-       "Sığaçta Depolanan Enerji",
-       "Kondansatörlerde Eşdeğer Sığa, Yük Ve Potansiyel Farkı",
-       "Sığaç Modeli",
-       "Manyetizma ve Elektromanyetik İndüklenme",
-       "Üzerinden Akım Geçen Telin Oluşturduğu Manyetik Alan",
-       "İletken Tel Üzerinden Geçen Akımın Oluşturduğu Manyetik Alanla İlgili Hesaplamalar",
-       "Üzerinden Akım Geçen İletken Düz Tele Manyetik Alanda Etki Eden Kuvvet",
-       "Manyetik Alan İçerisinde Akım Taşıyan Dikdörtgen Tel Çerçeveye Etki Eden Kuvvetlerin",
-       "Döndürme Etkisi"
-    ],
-    "Kimya": [
-      "Bohr Atom Modelinin Sınırlılıkları",
-      "Modern Atom Modeli ve Orbital Kavramı",
-      "Yörünge ve Orbital Kavramları",
-      "Kuantum Sayıları",
-      "Çok Elektronlu Atomlarda Orbitallerin Enerji Seviyeleri",
-      "Nötr Atomların Elektron Dizilimleri ve Periyodik Sistemdeki Yerleri",
-      "Hund Kuralı",
-      "Pauli İlkesi",
-      "Aufbau Kuralı",
-       "Atomların Elektron Dizilimleri",
-       "Periyodik Özellikler",
-       "Periyodik Özelliklerdeki Değişim Eğilimleri",
-       "Periyodik Özellikler",
-       "Elementleri Tanıyalım",
-       "Elementlerin Periyodik Sistemdeki Konumu ve Özellikleri",
-       "S Bloku Elementleri ve Özellikleri",
-       "P Bloku Elementleri ve Özellikleri",
-       "D Bloku Elementleri ve Özellikleri",
-       "F Bloku Elementleri ve Özellikleri",
-       "Asal Gaz Özellikleri ve Elektron Dizilimi",
-       "Yükseltgenme Basamakları",
-       "Yükseltgenme Basamakları ve Elektron Dizilimleri",
-       "D Bloku Elementlerinin Yükseltgenme Basamakları",
-       "Gazlar",
-       "Gazların Özellikleri ve Gaz Yasaları",
-       "Gazların Betimlenmesinde Kullanılan Özellikler Ve Ölçülmesi",
-       "Gaz Yasaları",
-       "Boyle Yasası (Basınç-Hacim İlişkisi)",
-       "Charles Yasası (Hacim-Sıcaklık İlişkisi)",
-       "Gay-Lussac Yasası (Basınç-Sıcaklık İlşikisi)",
-       "Avogadro Yasası (Mol Sayısı-Hacim İlişkisi)",
-       "Gaz Yasalarının Grafiklerle Yorumlanması",
-       "İdeal Gaz Yasası",
-       "Gaz Yasaları ve İdeal Gaz Yasası",
-       "Gazlarda Kinetik Teori",
-       "Kinetik Teori",
-       "Graham Difüzyon Yasası",
-       "Gaz Karışımları",
-       "Kısmi Basınç",
-       "Gerçek Gazlar",
-       "Gerçek Gaz ve İdeal Gaz",
-       "Sıvı Çözeltiler ve Çözünürlük",
-       "Çözücü Çözünen Etkileşimleri",
-       "Çözücü-Çözünen Etkileşimleri",
-       "Derişim Birimleri",
-       "Çözünen Madde Miktarı ve Derişim Birimleri",
-       "Molarite",
-       "Molalite",
-       "Farklı Derişimlerde Çözelti Hazırlanması",
-       "Derişimle İlgili Hesaplamalar",
-       "Koligatif Özellikler",
-       "Çözeltilerin Koligatif Özellikleri ve Derişimleri",
-       "Buhar Basıncı Alçalması",
-       "Kaynama Noktası Yükselmesi (Ebülyoskopi)",
-       "Donma Noktası Alçalması (Kriyoskopi)",
-       "Ters Ozmoz Yöntemiyle Su Arıtımı",
-       "Çözünürlük",
-       "Çözeltilerin Sınıflandırılması",
-       "Çözünürlük Hesaplamaları",
-       "Çözünürlüğe Etki Eden Faktörler"
-    ],
-    "Biyoloji": [
-      "Endokrin Bezler ve Salgıladıkları Hormonlar",
-      "Sinir Sistemi Rahatsızlıkları",
-      "Sinir Sisteminin Sağlıklı Yapısının Korunması",
-      "Duyu Organlarının Yapısı ve İşleyişi",
-      "Duyu Organlarının Sağlıklı Yapısının Korunması",
-      "Destek ve Hareket Sisteminin Yapısı, Görevi ve İşleyişi",
-      "Destek ve Hareket Sistemi Rahatsızlıkları",
-      "Destek ve Hareket Sisteminin Sağlıklı Yapısının Korunması",
-      "Sindirim Sisteminin Yapısı, Görevi ve İşleyişi",
-       "Sindirim Sistemi Rahatsızlıkları",
-       "Sindirim Sisteminin Sağlıklı Yapısının Korunması",
-       "Bölüm Dolaşım Sistemleri",
-       "Kalbin, Damarların ve Kanın Yapısı, Görevi ve İşleyişi",
-       "Lenf Dolaşımı",
-       "Dolaşım Sistemi Rahatsızlıkları",
-       "Dolaşım Sisteminin Sağlıklı Yapısının Korunması",
-       "Solunum Sisteminin Yapısı, Görevi ve İşleyişi",
-       "Alveollerden Dokulara ve Dokulardan Alveollere Gaz Taşınması",
-       "Solunum Sistemi Rahatsızlıkları",
-       "Solunum Sisteminin Sağlıklı Yapısının Korunması",
-       "Bölüm Üriner Sistem",
-       "Üriner Sistemin Yapısı, Görevi ve İşleyişi",
-       "Homeostasinin Sağlanmasında Böbreklerin Rolü",
-       "Üriner Sistem Rahatsızlıkları",
-       "Üriner Sistemin Sağlıklı Yapısının Korunması",
-       "Üreme Sisteminin Yapısı, Görevi ve İşleyişi",
-       "Üreme Sisteminin Sağlıklı Yapısının Korunması",
-       "İnsanda Embriyonik Gelişim Süreci",
-       "Bölüm Komünite Ekolojisi",
-       "Komünitenin Yapısına Etki Eden Faktörler",
-       "Komünitede Tür İçi ve Türler Arasındaki Rekabet",
-       "Komünitede Türler Arasında Simbiyotik İlişkiler",
-       "Komünitelerdeki Süksesyon",
-       "Popülasyonun Yapısı ve Dinamikleri"
-    ],
-    "Tarih": [
-      "1595-1700 Yılları Arasındaki Siyasi Gelişmeler",
-      "Uzun Savaşlardan Diplomasiye",
-      "Avrupa’da Din Savaşlarından Modern Devlete",
-      "XVII ve XVIII. Yüzyıllarda Osmanlı Devleti’nde ve Avrupa’da Denizcilik Faaliyetleri",
-      "Fetihlerden Savunmaya",
-      "Avrupa'da Değişim Çağı",
-      "Osmanlı Devleti'nde Değişim",
-      "Osmanlı Devleti’nde İsyanlar ve Düzeni Koruma Çabaları",
-      "XVIII-XX. Yüzyıl Siyasi Gelişmeleri (1774-1914)",
-       "Osmanlı Topraklarını Paylaşma Mücadelesi",
-       "Mehmet Ali Paşa’nın Güç Kazanması",
-       "Osmanlı-Rusya Rekabeti (1768-1914)",
-       "İhtilaller Çağı",
-       "Osmanlı Devleti’nde Modern Orduya Geçiş",
-       "Yüzyılda Sosyal Hayattaki Değişimler",
-       "Osmanlı Devleti’nde Demokratikleşme Hareketleri",
-       "Osmanlı Devleti’nde Darbeler",
-       "El Emeğinden Makineleşmeye",
-       "Osmanlı Devleti’nde Sanayileşme Çabaları",
-       "Ekonomiyi Düzeltme Çabaları",
-       "Ulus Devlete Giden Süreçte Nüfus",
-       "Modern Hayattaki Sosyal Değişim"
-    ],
-    "Coğrafya": [
-      "Ekosistemlerin Özellikleri ve İşleyişi",
-      "Biyoçeşitlilik",
-      "Ekosistemlerin Unsurları",
-      "Enerji Akışı ve Madde Döngüleri",
-      "Besin Zinciri ve Enerji Akışı",
-      "Madde Döngüleri",
-      "Su Ekosistemleri",
-      "Nüfus Politikaları",
-      "Ülkelerin Nüfus Politikaları",
-       "Türkiye’de Nüfus Politikaları ve Bu Politikaların Etkileri",
-       "Türkiye’de Nüfus Politikaları",
-       "Türkiye Nüfusunun Geleceği",
-       "Yerleşmelerin Özellikleri",
-       "Şehirlerin Fonksiyonları ve Değişimi",
-       "Şehirlerin Etki Alanları",
-       "Türkiye’de Yerleşmeler",
-       "Türkiye’de Şehirlerin Fonksiyonları",
-       "Türkiye’de Kırsal Yerleşme Tipleri",
-       "Ekonomik Faaliyetler ve Doğal Kaynaklar",
-       "Üretim, Dağıtım ve Tüketimi Etkileyen Faktörler",
-       "Üretim, Dağıtım ve Tüketim Sektörlerinin Ekonomiye Etkileri",
-       "Doğal Kaynaklar ve Ekonomi",
-       "Dünyada Doğal Kaynak-Ekonomi İlişkisi",
-       "Türkiye’de Doğal Kaynak-Ekonomi İlişkisi",
-       "Türkiye’de Ekonomi",
-       "Türkiye Ekonomi Politikaları",
-       "Türkiye Ekonomisinin Sektörel Dağılımı",
-       "Türkiye’de Tarım",
-       "Türkiye’de Madenler ve Enerji Kaynakları",
-       "Türkiye’de Sanayi",
-       "Kültür Bölgeleri",
-       "İlk Kültür Merkezleri",
-       "Kültür Bölgelerinin Oluşumu ve Dağılışı",
-       "Türk Kültürü",
-       "Anadolu’nun Kültürel Özellikleri",
-       "Bölüm: Küreselleşen Dünya",
-       "Küresel Ticaret",
-       "Turizm",
-       "Sanayileşme Süreci: Almanya",
-       "Tarım-Ekonomi İlişkisi: Fransa Ve Somali",
-       "Uluslararası Örgütler",
-       "Çevre Sorunları",
-       "Çevre Sorunları ve Türleri",
-       "Madenler ve Enerji Kaynaklarına Ait Kullanımın Çevresel Etkileri",
-       "Doğal Kaynak Kullanımının Çevresel Etkileri",
-       "Arazi Kullanımının Çevresel Etkileri",
-       "Küresel Çevre Sorunları",
-       "Doğal Kaynakların Sürdürülebilir Kullanımı"
-    ],
-    "Din Kültürü": [
-      "Ahiret Âlemi",
-      "Ahirete Uğurlama",
-      "Kur’an’dan Mesajlar: Bakara Suresi 153-157. Ayetler",
-      "Hz. Muhammed’in Şahsiyeti",
-      "Hz. Muhammed’in Peygamberlik Yönü",
-      "Hz. Muhammed’e Bağlılık ve İtaat",
-      "Kur’an’dan Mesajlar: Ahzâb Suresi 25, 45 ve 46. Ayetler",
-      "İslam’ın Aydınlık Yolu: Hidayet",
-      "Allah’ı Görüyormuşçasına Yaşamak: İhsan",
-       "Allah İçin Samimiyet: İhlas",
-       "Allah’ın Emir ve Yasaklarına Riayet: Takva",
-       "Dosdoğru Yol: Sırat-ı Müstakim",
-       "Allah Yolunda Mücahede: Cihat",
-       "İyi, Doğru ve Güzel Davranış: Salih Amel",
-       "Kur’an’dan Mesajlar: Kehf Suresi 107-110. Ayetler",
-       "İnançla İlgili Felsefi Yaklaşımlar",
-       "Yeni Dinî Hareketler",
-       "Kur’an’dan Mesajlar: En’âm Suresi 59. Ayet ve Lokmân Suresi 27. Ayet",
-       "Yahudilik",
-       "Hristiyanlık"
-    ],
-    "İngilzce": [
-      "Future Jobs",
-      "Hobbies And Skills",
-      "Hard Times",
-      "What A Life!",
-      "Back To The Past",
-      "Open Your Heart",
-      "Facts About Turkey",
-      "Sports",
-      "My Friends",
-       "Values And Norms"
-    ]
-  },
-  "sinif12": {
-    "Türk dili ve edebiyatı": [
+  },//11.Sınıf
+
+  {
+    "sinif":"12. Sınıf",
+    "dersler": [
+      {"ders":"Türk dili ve edebiyatı",
+        "konular": [
       "Edebiyat-Felsefe İlişkisi",
       "Edebiyat-Psikoloji İlişkisi",
       "Dilin Tarihi Süreç İçerisindeki Değişimini Etkileyen Sebepler",
@@ -1135,8 +1189,9 @@
        "Cumhuriyet Dönemi’nde Söylev",
        "İslamiyet’in Kabulünden Önceki Türk Edebiyatında Söylev",
        "İslamiyet Etkisinde Gelişen Türk Edebiyatında Söylev"
-    ],
-    "Dil ve Anlatım": [
+    ]},
+      {"ders":"Dil ve Anlatım",
+        "konular": [
       "Sanat Metinlerinin Ayırıcı Özellikleri",
       "Fabl",
       "Masal",
@@ -1149,9 +1204,11 @@
        "Sempozyum",
        "Forum",
        "Münazara",
-       "Bilimsel Yazılar"
-    ],
-    "Matematik": [
+       "Bilimsel Yazılar",
+          ]},
+      {
+        "ders":"Matematik"
+        "konular": [
       "Üstel Fonksiyon",
       "Logaritmik Fonksiyon",
       "Üstel, Logaritmik Denklemler ve Eşitsizlikler",
@@ -1165,8 +1222,9 @@
        "Türevin Uygulamaları",
        "Belirsiz İntegral",
        "Çemberin Analitik İncelemesi"
-    ],
-    "Fizik": [
+    ]},
+      {"ders":"Fizik",
+        "konular": [
       "Çizgisel Hız, Açısal Hız",
       "Merkezcil Kuvvet, Merkezcil İvme",
       "Eylemsizlik Momenti",
@@ -1201,8 +1259,9 @@
        "Nanoteknoloji",
        "Nanobilim",
        "LASER"
-    ],
-    "Kimya": [
+    ]},
+      {"ders":"Kimya",
+        "konular": [
       "ndirgenme Yükseltgenme Tepkimelerinde Elektrik Akımı",
       "Elektrotlar ve Elektrokimyasal Hücreler",
       "Elektrot Potansiyelleri",
@@ -1225,8 +1284,9 @@
        "Esterler",
        "Fosil Yakıtlar",
        "Alternatif Enerji Kaynakları"
-    ],
-    "Biyoloji": [
+    ]},
+      {"ders":"Biyoloji",
+        "konular": [
       "Nükleik Asitler",
       "Protein Sentezi",
       "Genetik Uygulamaları",
@@ -1239,8 +1299,9 @@
        "Bitkilerde Madde Taşınması",
        "Bitkilerde Üreme",
        "Canlılar ve Çevre"
-    ],
-    "İnkılâp tarihi": [
+    ]},
+      {"ders":"İnkılâp tarihi",
+        "konular": [
       "Mustafa Kemal’in Ailesi ve Eğitim Hayatı",
       "Mustafa Kemal’in Askerlik Hayatının İlk Yılları",
       "20.Yüzyıl Başlarında Osmanlı Devleti",
@@ -1277,8 +1338,9 @@
        "1960 Sonrası Türkiye’de Meydana Gelen Siyasi, Ekonomik ve Sosyokültürel Gelişmeler",
        "1990 Sonrasında Türkiye’de Meydana Gelen Ekonomik, Siyasi, Sosyal ve Kültürel Gelişmeler",
        "1990 Sonrasında Meydana Gelen Siyasi Gelişmeler ve Türkiye’ye Etkileri"
-    ],
-    "Coğrafya": [
+    ]},
+      {"ders":"Coğrafya",
+        "konular": [
       "Ekstrem Doğa Olayları",
       "Astronomi Kökenli Ekstrem Doğa Olayları",
       "Meteoroloji Kökenli Ekstrem Doğa Olayları",
@@ -1339,8 +1401,9 @@
        "Türk Kültürü Havzası",
        "Teknolojik Gelişmelerin Kültürel ve Ekonomik Etkileri",
        "Gelişmişlik Seviyesinin Belirlenmesinde Etkili Olan Faktörler"
-    ],
-    "Din Kültürü": [
+    ]},
+      {"ders":"Din Kültürü",
+        "konular": [
       "Din-Bilim İlişkisi",
       "İslam Medeniyetinde Bilim ve Düşüncenin Gelişimi",
       "İslam Medeniyetinde Öne Çıkan Eğitim Kurumları",
@@ -1380,8 +1443,9 @@
        "Budizm",
        "Konfüçyanizm",
        "Taoizm"
-    ],
-    "İngilizce": [
+    ]},
+      {"ders":"İngilizce",
+        "konular": [
       "Expressing opinion Expressing preferences",
       "Would Prefer, Would Rather",
       "Conditional Sentences",
@@ -1433,10 +1497,15 @@
        "Wish",
        "If only",
        "Should have V3"
+    ]}
     ]
-  },
-  "tyt": {
-    "Türkçe": [
+  },//12.Sınıf
+
+  {
+    "sinif":"TYT",
+    "dersler": [
+      {"ders":"Türkçe",
+        "konular": [
       "Sözcük Anlamı",
       "Söz Yorumu",
       "Deyim ve Atasözü",
@@ -1456,8 +1525,9 @@
        "Cümlenin Ögeleri",
        "Cümle  Türleri",
        "Anlatım Bozukluğu"
-    ],
-    "Matematik": [
+    ]},
+      {"ders":"Matematik",
+        "konular": [
       "Temel Kavramlar",
       "Sayı Basamakları",
       "Rasyonel Sayılar",
@@ -1481,8 +1551,9 @@
        "2. Dereceden Denklemler",
        "Karmaşık Sayılar",
        "Parabol"
-    ],
-    "Geometri": [
+    ]},
+      {"ders":"Geometri",
+        "konular": [
       "Doğruda ve Üçgende Açılar",
       "Dik ve Özel Üçgenler",
       "Dik Üçgende Trigonemetrik Bağıntılar",
@@ -1507,8 +1578,9 @@
        "Koordinat Düzlemi ve Noktanın Analitiği",
        "Vektörler-1",
        "Doğrunun Analitiği"
-    ],
-    "Fizik": [
+    ]},
+      {"ders":"Fizik",
+        "konular": [
       "Elektrostatik",
       "Mıknatıs",
       "Elektrik Akımı",
@@ -1525,8 +1597,9 @@
        "Madde Ve Özellikleri",
        "Kuvvetler",
        "Fiziğin Doğası"
-    ],
-    "Kimya": [
+    ]},
+      {"ders":"Kimya",
+        "konular": [
       "Kimya Bilimi",
       "Atom ve Periyodik Sistem",
       "Kimyasal Türler Arası Etkileşimler",
@@ -1540,8 +1613,9 @@
        "Karışımların Ayrılması",
        "Asitler, Bazlar, Tuzlar",
        "Kimya Her Yerde"
-    ],
-    "Biyoloji ": [
+    ]},
+      {"ders":"Biyoloji ",
+        "konular": [
       "Biyoloji Bilimi",
       "Temel Bileşenler",
       "Hücrenin Yapısı",
@@ -1552,8 +1626,9 @@
       "Üreme Çeşitleri",
       "Kalıtım",
        "Ekosistem Ekolojisi"
-    ],
-    "Tarih ": [
+    ]},
+      {"ders":"Tarih ",
+        "konular": [
       "Tarih Bilimine Giriş",
       "İlk Çağ Medeniyetleri",
       "İslamiyet Öncesi Türk Devletleri",
@@ -1576,8 +1651,9 @@
       "Türk İnkılabı",
       "Atatürkçülük ve Atatürk İlkeleri",
       "Atatürk Dönemi Türk Dış Politikası"
-    ],
-    "Coğrafya": [
+    ]},
+      {"ders":"Coğrafya",
+        "konular": [
       "Doğa ve İnsan",
       "Dünya’nın Şekil ve Hareketleri",
       "Coğrafi Konum",
@@ -1599,8 +1675,9 @@
        "Yerleşmeler",
        "Bölgeler ve Ülkeler",
        "Doğal Afetler"
-    ],
-    "Felsefe": [
+    ]},
+      {"ders":"Felsefe",
+        "konular": [
       "Felsefeyi Tanıma",
       "Felsefe ile Düşünme",
       "Varlık Felsefesi",
@@ -1610,8 +1687,9 @@
       "Din Felsefesi",
       "Siyaset Felsefesi",
       "Sanat Felsefesi"
-    ],
-    "Din Kültürü": [
+    ]},
+      {"ders":"Din Kültürü",
+        "konular": [
       "İnanç",
       "İbadet",
       "Ahlâk ve Değerler",
@@ -1623,10 +1701,14 @@
       "İslam Düşüncesinde Tasavvufi Yorumlar",
        "Güncel Dini Meseleler",
        "Dinler"
+    ]}
     ]
-  },
-  "ayt": {
-    "Matematik": [
+  },//TYT
+  {
+    "sinif":"AYT",
+    "dersler": [
+      {"ders":"Matematik",
+        "konular": [
      "Fonksiyonlar",
      "Polinomlar",
      "2. Dereceden Denklemler",
@@ -1644,8 +1726,9 @@
       "Belirsiz İntegral",
       "Belirli İntegral",
       "İntegralle Alan Hesabı"
-    ],
-    "Geometri": [
+    ]},
+      {"ders":"Geometri",
+        "konular": [
       "Doğruda Açılar",
       "Üçgende Açılar",
       "Açı-Kenar Bağıntıları",
@@ -1668,8 +1751,9 @@
        "Dik Piramit",
        "Silindir-Koni-Küre",
        "Çemberin Analitiği"
-    ],
-    "Fizik": [
+    ]},
+      {"ders":"Fizik",
+        "konular": [
       "Vektörler",
       "Bağıl Hareket",
       "Newton’ın Hareket Yasaları",
@@ -1690,8 +1774,9 @@
        "Büyük Patlama ve Radyoaktivite",
        "Modern Fizik",
        "Modern Fiziğin Teknolojideki Uygulamaları"
-    ],
-    "Kimya": [
+    ]},
+      {"ders":"Kimya",
+        "konular": [
       "Kuantum Sayıları",
       "Elektron Dizilimi",
       "Periyodik Özellik",
@@ -1712,9 +1797,11 @@
        "Alkoller ve Eterler",
        "Karbonil Bileşikleri",
        "Karboksilik Asitler ve Esterler",
-       "Enerji Kaynakları ve Bilimsel Gelişmeler"
-    ],
-    "Biyoloji": [
+       "Enerji Kaynakları ve Bilimsel Gelişmeler",
+          ]},
+      {
+          "ders":"Biyoloji",
+          "konular": [
       "Sinir Sistemi",
       "Endokrin Sistem",
       "Duyu Organları",
@@ -1730,8 +1817,9 @@
       "Hücresel Solunum",
       "Bitki Biyolojisi",
       "Canlılar ve Çevre"
-    ],
-    "Edebiyat": [
+    ]},
+      {"ders":"Edebiyat",
+          "konular": [
       "Anlam Bilgisi (Sözcükte, Cümlede ve Paragrafta Anlam)",
       "Edebî Bilgiler",
       "Destan Dönemi (İslamiyet Öncesi) Türk Edebiyatı",
@@ -1748,8 +1836,9 @@
       "Dünya Edebiyatı",
       "Çağdaş Türk Edebiyatı",
       "Eser Özetleri"
-    ],
-    "Tarih": [
+    ]},
+      {"ders":"Tarih",
+          "konular": [
       "Atatürk’ün Ölümü",
       "20. yy Başlarında Dünya",
       "İkinci Dünya Savaşı",
@@ -1763,8 +1852,9 @@
       "Türklerde Eğitim – Bilim",
       "Türklerde Sanat",
       "Türklerde Spor"
-    ],
-    "Coğrafya": [
+    ]},
+      {"ders":"Coğrafya",
+          "konular": [
       "Ekosistem",
       "Doğadaki Ekstrem Olaylar",
       "İlk Medeniyet ve Şehirler",
@@ -1782,8 +1872,9 @@
       "Bölgeler ve Ülkeler",
       "Çevre ve Toplum",
       "Doğal Afetler"
-    ],
-    "Felsefe": [
+    ]},
+      {"ders":"Felsefe",
+          "konular": [
      "Felsefe’nin Alanı",
      "Bilgi Felsefesi",
      "Bilim Felsefesi",
@@ -1792,27 +1883,31 @@
      "Siyaset Felsefesi",
      "Sanat Felsefesi",
      "Din Felsefesi"
-    ],
-    "Mantık ": [
+    ]},
+      {"ders":"Mantık ",
+          "konular": [
       "Mantığa Giriş",
       "Klasik Mantık",
       "Mantık ve Dil",
       "Sembolik Mantık"
-    ],
-    "Psikoloji ": [
+    ]},
+      {"ders":"Psikoloji ",
+          "konular": [
       "Psikoloji Bilimini Tanıyalım",
       "Psikolojinin Temel Süreçleri",
       "Öğrenme Bellek Düşünme",
       "Ruh Sağlığının Temelleri"
-    ],
-    "Sosyolojiye Giriş": [
+    ]},
+      {"ders":"Sosyolojiye Giriş",
+          "konular": [
       "Birey ve Toplum",
       "Toplumsal Yapı",
       "Toplumsal Değişme ve Gelişme",
       "Toplum ve Kültür",
       "Toplumsal Kurumlar"
-    ],
-    "Din Kültürü": [
+    ]},
+      {"ders":"Din Kültürü",
+          "konular": [
       "Dünya ve Ahiret",
       "Kur’an’a Göre Hz. Muhammed",
       "Kur’an’da Bazı Kavramlar",
@@ -1823,6 +1918,7 @@
       "İslam Düşüncesinde Tasavvufi Yorumlar ve Mezhepler",
       "Güncel Dini Meseleler",
       "Yaşayan Dinler"
-    ]
-  }
-}
+    ]}
+        ]
+  }//AYT
+] //Müfredat
