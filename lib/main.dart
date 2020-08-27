@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
+import 'dart:convert';
 
 
 void main() => runApp(MyApp());
@@ -83,7 +84,7 @@ class Hosgeldiniz extends StatelessWidget{
               textColor: Colors.white,
               onPressed: () => Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => Grade()),
+                MaterialPageRoute(builder: (context) => Siniflar()),
               ),
               child: Container(
 
@@ -110,8 +111,24 @@ class Hosgeldiniz extends StatelessWidget{
     );
   }
 }
+class Siniflar extends StatefulWidget{
+  @override
+  _SiniflarState createState() =>_SiniflarState();
+}
 
-class Grade extends StatelessWidget { // Bütün Classları İngilizce      isimlendiriyoruz.
+class _SiniflarState extends State<Siniflar>{
+
+  List tumSiniflar;
+  @override void initState() {
+    // TODO: implement initState
+    super.initState();
+    veriOku().then((gelenSiniflar){
+      setState(() {
+        tumSiniflar = gelenSiniflar;
+      });
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -127,142 +144,64 @@ class Grade extends StatelessWidget { // Bütün Classları İngilizce      isim
           title: Text("AKILLI REHBER"),
           centerTitle: true,
         ),
-        body: Column(
-          mainAxisAlignment: MainAxisAlignment.spaceAround ,
-          children: [
-            GestureDetector(
-              onTap: (){},
-              child:  Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text('Bir sınıf seçiniz:',
-                      style: TextStyle(fontSize: 26, height: 5 ,fontWeight: FontWeight.bold)),
-                ],
-              ),
-            ),
-            Column(
+        body: new Container(
 
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: SizedBox(
-                    width: 200,
-                    height: 72,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color:Color(0xff6200ee)),
+          alignment: Alignment.center,
+                  child: FutureBuilder(
+                      future: veriOku(),
+                      builder:(context, sonuc){
 
-                      ),
-                      color: Color(0xff6200ee),
-                      textColor: Colors.white,
-                      onPressed: () {},
-                      child: Text(
-                        "9.SINIF",
-                        style: TextStyle(
-                          fontSize: 24,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: SizedBox(
-                    width: 200,
-                    height: 72,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color:Color(0xff6200ee)),
+                    if(sonuc.hasData){
+                      tumSiniflar = sonuc.data;
+                      return ListView.builder(
+                        shrinkWrap: true,
+                        itemBuilder: (context, index) {
 
-                      ),
-                      color: Color(0xff6200ee),
-                      textColor: Colors.white,
-                      onPressed: () {},
-                      child: Text(
-                        "10.SINIF",
-                        style: TextStyle(
-                          fontSize: 24,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: SizedBox(
-                    width: 200,
-                    height: 72,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color:Color(0xff6200ee)),
+                        return Padding(
+                          padding: const EdgeInsets.all(10.0),
+                          child: RaisedButton(
+                            padding: EdgeInsets.fromLTRB(0, 30, 0, 30),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                              side: BorderSide(color:Color(0xff6200ee)),
 
-                      ),
-                      color: Color(0xff6200ee),
-                      textColor: Colors.white,
-                      onPressed: () {},
-                      child: Text(
-                        "11.SINIF",
-                        style: TextStyle(
-                          fontSize: 24,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: SizedBox(
-                    width: 200,
-                    height: 72,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color:Color(0xff6200ee)),
+                            ),
+                            color: Color(0xff6200ee),
+                            textColor: Colors.white,
+                            onPressed: () {},
+                              child: Text(tumSiniflar[index]["sinif"],style: TextStyle(
+                                fontSize: 20,
+                              ),
+                              ),
 
-                      ),
-                      color: Color(0xff6200ee),
-                      textColor: Colors.white,
-                      onPressed: () {},
-                      child: Text(
-                        "12.SINIF",
-                        style: TextStyle(
-                          fontSize: 24,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: SizedBox(
-                    width: 200,
-                    height: 72,
-                    child: RaisedButton(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color:Color(0xff6200ee)),
+                            ),
+                        );
 
-                      ),
-                      color: Color(0xff6200ee),
-                      textColor: Colors.white,
-                      onPressed: () {},
-                      child: Text(
-                        "YKS HAZIRLIK",
-                        style: TextStyle(
-                          fontSize: 24,
-                        ),
-                      ),
-                    ),
-                  ),
-                ),
-              ],
-            ),
-          ],
-        ),
-        ),
-      );
+
+                      },
+                      itemCount: tumSiniflar.length,
+                      );
+                    }else{
+                      return Center(child: CircularProgressIndicator(),);
+                    }
+    }),
+    ),
+    ),
+    );
+    }
+
+
+
+  Future<List> veriOku() async{
+    var gelenJson = await DefaultAssetBundle.of(context).loadString("assets/data/mufredat.json");
+    List sinifListesi = json.decode(gelenJson.toString());
+    debugPrint("Toplam ders sayısı: "+sinifListesi.length.toString());
+    for( int i=0; i<sinifListesi.length; i++ ){
+      debugPrint("Sınıf: " + sinifListesi[i]["sinif"].toString());
+    }
+    return sinifListesi;
+
   }
 }
+
+

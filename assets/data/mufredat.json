@@ -1,5 +1,5 @@
 [
-  { "sinif":"9. Sınıf"
+  { "sinif":"9. Sınıf",
     "dersler":[
       {
         "ders":"Türk Dili ve Edebiyatı",
@@ -370,7 +370,7 @@
       "Invitations And Celebrations ",
       "Television And Social Media "
     ]}
-    ]}, //9.Sınıf
+    ]},
 
   {"sinif":"10. Sınıf",
   "dersler":[
@@ -727,7 +727,7 @@
        "Shopping"
     ]}
   ]
-  },//10.Sınıf
+  },
 
   {
     "sinif":"11. Sınıf",
@@ -1149,7 +1149,7 @@
         "Values And Norms"
       ]}
     ]
-  },//11.Sınıf
+  },
 
   {
     "sinif":"12. Sınıf",
@@ -1204,10 +1204,10 @@
        "Sempozyum",
        "Forum",
        "Münazara",
-       "Bilimsel Yazılar",
+       "Bilimsel Yazılar"
           ]},
       {
-        "ders":"Matematik"
+        "ders":"Matematik",
         "konular": [
       "Üstel Fonksiyon",
       "Logaritmik Fonksiyon",
@@ -1499,7 +1499,7 @@
        "Should have V3"
     ]}
     ]
-  },//12.Sınıf
+  },
 
   {
     "sinif":"TYT",
@@ -1703,7 +1703,7 @@
        "Dinler"
     ]}
     ]
-  },//TYT
+  },
   {
     "sinif":"AYT",
     "dersler": [
@@ -1797,7 +1797,7 @@
        "Alkoller ve Eterler",
        "Karbonil Bileşikleri",
        "Karboksilik Asitler ve Esterler",
-       "Enerji Kaynakları ve Bilimsel Gelişmeler",
+       "Enerji Kaynakları ve Bilimsel Gelişmeler"
           ]},
       {
           "ders":"Biyoloji",
@@ -1920,5 +1920,5 @@
       "Yaşayan Dinler"
     ]}
         ]
-  }//AYT
-] //Müfredat
+  }
+]
