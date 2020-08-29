@@ -1,3 +1,5 @@
+import 'package:akilliRehber/dersler.dart';
+import 'package:akilliRehber/models/siniflar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
@@ -44,6 +46,7 @@ class Hosgeldiniz extends StatelessWidget{
   Widget build(BuildContext context) {
     return MaterialApp(
       title: "Hosgeldiniz",
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
           title: Center(
@@ -116,7 +119,7 @@ class Siniflar extends StatefulWidget{
 
 class _SiniflarState extends State<Siniflar>{
 
-  List tumSiniflar;
+  List<Sinif> tumSiniflar;
   @override void initState() {
     // TODO: implement initState
     super.initState();
@@ -179,8 +182,11 @@ class _SiniflarState extends State<Siniflar>{
                                 ),
                                 color: Color(0xff6200ee),
                                 textColor: Colors.white,
-                                onPressed: () {},
-                                  child: Text(tumSiniflar[index]["sinif"],style: TextStyle(
+                                onPressed: () => Navigator.push(
+                                  context,
+                                  MaterialPageRoute(builder: (context) => DersListesi()),
+                                ),
+                                  child: Text(tumSiniflar[index].sinif,style: TextStyle(
                                     fontSize: 24,
                                   ),
                                   ),
@@ -207,11 +213,7 @@ class _SiniflarState extends State<Siniflar>{
 
   Future<List> veriOku() async{
     var gelenJson = await DefaultAssetBundle.of(context).loadString("assets/data/mufredat.json");
-    List sinifListesi = json.decode(gelenJson.toString());
-    debugPrint("Toplam ders sayısı: "+sinifListesi.length.toString());
-    for( int i=0; i<sinifListesi.length; i++ ){
-      debugPrint("Sınıf: " + sinifListesi[i]["sinif"].toString());
-    }
+    List<Sinif> sinifListesi = (json.decode(gelenJson) as List).map((mapYapisi) => Sinif.fromJson(mapYapisi)).toList();
     return sinifListesi;
 
   }
