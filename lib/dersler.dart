@@ -68,6 +68,7 @@ class _DersListesiState extends State<DersListesi>{
                       if(sonuc.hasData){
                         tumSiniflar = sonuc.data;
                         return ListView.builder(
+                          physics: NeverScrollableScrollPhysics(),
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
                             return CheckboxListTile(
