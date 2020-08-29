@@ -41,35 +41,36 @@ class _DersListesiState extends State<DersListesi>{
           title: Text("AKILLI REHBER"),
           centerTitle: true,
         ),
-        body: Column(
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
 
-          children:[
-            new Container(
-              child:  Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text('Türk Dili ve Edebiyatı',
-                      style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
-                ],
+          child: Column(
+
+            children:[
+              new Container(
+                child:  Row(
+
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text('Türk Dili ve Edebiyatı',
+                        style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 20),
-            new Container(
+              const SizedBox(height: 20),
+              new Container(
 
-              alignment: Alignment.center,
-              child: FutureBuilder(
-                  future: veriOku(),
-                  builder:(context, sonuc){
+                alignment: Alignment.center,
+                child: FutureBuilder(
+                    future: veriOku(),
+                    builder:(context, sonuc){
 
-                    if(sonuc.hasData){
-                      tumSiniflar = sonuc.data;
-                      return ListView.builder(
-                        shrinkWrap: true,
-                        itemBuilder: (context, index) {
-
-                          return Padding(
-                            padding: const EdgeInsets.fromLTRB(0, 10, 0, 10),
-                            child: CheckboxListTile(
+                      if(sonuc.hasData){
+                        tumSiniflar = sonuc.data;
+                        return ListView.builder(
+                          shrinkWrap: true,
+                          itemBuilder: (context, index) {
+                            return CheckboxListTile(
                               value: true,
                               onChanged: (value) {},
 
@@ -78,19 +79,19 @@ class _DersListesiState extends State<DersListesi>{
                               ),
                               ),
 
-                            ),
-                          );
+                            );
 
 
-                        },
-                        itemCount: tumSiniflar[0].dersler[0].konular.length,
-                      );
-                    }else{
-                      return Center(child: CircularProgressIndicator(),);
-                    }
-                  }),
-            ),
-          ],
+                          },
+                          itemCount: tumSiniflar[0].dersler[0].konular.length,
+                        );
+                      }else{
+                        return Center(child: CircularProgressIndicator(),);
+                      }
+                    }),
+              ),
+            ],
+          ),
         ),
       ),
     );
