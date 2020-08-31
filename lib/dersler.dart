@@ -85,7 +85,7 @@ class _DersListesiState extends State<DersListesi>{
                               ),
                               onTap: () {
                                 Navigator.push(context,
-                                    new MaterialPageRoute(builder: (context) => KonuListesi(dersadi: tumSiniflar[index].dersler[index],))
+                                    new MaterialPageRoute(builder: (context) => KonuListesi(dersadi: widget.sinifadi.dersler[index],))
                                 );
                               },
                             );
