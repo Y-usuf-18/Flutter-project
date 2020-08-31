@@ -7,15 +7,15 @@ import 'dart:convert';
 
 
 class DersListesi extends StatefulWidget{
+  final Sinif sinifadi;
+
+  DersListesi({this.sinifadi});
+
+
   @override
   _DersListesiState createState() =>_DersListesiState();
 }
-
 class _DersListesiState extends State<DersListesi>{
-
-
-
-
   List<Sinif> tumSiniflar;
 
   @override void initState() {
@@ -57,8 +57,9 @@ class _DersListesiState extends State<DersListesi>{
 
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text('9. Sınıf',
-                        style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
+
+                    Text( widget.sinifadi.sinif, style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
+
                   ],
                 ),
               ),
@@ -77,7 +78,7 @@ class _DersListesiState extends State<DersListesi>{
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
                             return ListTile(
-                              title: Text(tumSiniflar[index].dersler.toString(),style: TextStyle(
+                              title: Text(widget.sinifadi.dersler[index].ders.toString(),style: TextStyle(
                                 fontSize: 16,
                               ),
                               ),
@@ -86,7 +87,7 @@ class _DersListesiState extends State<DersListesi>{
 
 
                           },
-                          itemCount: tumSiniflar[0].dersler.length,
+                          itemCount: widget.sinifadi.dersler.length,
                         );
                       }else{
                         return Center(child: CircularProgressIndicator(),);

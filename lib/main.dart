@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
 import 'dart:convert';
+import 'package:akilliRehber/dersler.dart';
 
 
 
@@ -194,6 +195,9 @@ class _SiniflarState extends State<Siniflar>{
                                   color: Color(0xff6200ee),
                                   textColor: Colors.white,
                                   onPressed: () {
+                                    Navigator.push(context,
+                                    new MaterialPageRoute(builder: (context) => DersListesi(sinifadi: tumSiniflar[index],))
+                                    );
                                   },
                                     child: Text(tumSiniflar[index].sinif,style: TextStyle(
                                       fontSize: 24,
@@ -215,10 +219,6 @@ class _SiniflarState extends State<Siniflar>{
     ),
     );
     }
-
-
-
-
 }
 
 
