@@ -54,7 +54,6 @@ class _KonuListesiState extends State<KonuListesi>{
             children:[
               new Container(
                 child:  Row(
-
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text(widget.dersadi.ders,
@@ -64,7 +63,6 @@ class _KonuListesiState extends State<KonuListesi>{
               ),
               const SizedBox(height: 20),
               new Container(
-
                 alignment: Alignment.center,
                 child: FutureBuilder(
                     future: veriOku(),

@@ -166,21 +166,21 @@ class _SiniflarState extends State<Siniflar>{
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text('Bir sınıf seçiniz:',
-                        style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
+                        style: TextStyle(fontSize: 28, height: 3, fontWeight: FontWeight.bold)),
                   ],
                 ),
               ),
               const SizedBox(height: 20),
               new Container(
-
                 alignment: Alignment.center,
-                        child: FutureBuilder(
-                            future: veriOku(),
-                            builder:(context, sonuc){
+                child: FutureBuilder(
+                    future: veriOku(),
+                    builder:(context, sonuc){
 
                           if(sonuc.hasData){
                             tumSiniflar = sonuc.data;
                             return ListView.builder(
+                              physics: NeverScrollableScrollPhysics(),
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
                               return Padding(
@@ -213,6 +213,8 @@ class _SiniflarState extends State<Siniflar>{
                           }
     }),
     ),
+              const SizedBox(height: 50),
+
             ],
           ),
         ),
