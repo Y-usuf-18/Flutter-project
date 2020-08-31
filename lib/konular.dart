@@ -6,21 +6,11 @@ import 'dart:convert';
 
 
 class DersListesi extends StatefulWidget{
-
-
   @override
-  _DersListesiState createState() =>_DersListesiState(data: null);
+  _DersListesiState createState() =>_DersListesiState();
 }
 
 class _DersListesiState extends State<DersListesi>{
-  final String data;
-
-  _DersListesiState({
-    Key key,
-    @required this.data,
-  }) : super();
-
-
 
   List<Sinif> tumSiniflar;
   @override void initState() {
@@ -62,7 +52,7 @@ class _DersListesiState extends State<DersListesi>{
 
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text('9. Sınıf',
+                    Text('Türk Dili ve Edebiyatı',
                         style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
                   ],
                 ),
@@ -81,8 +71,11 @@ class _DersListesiState extends State<DersListesi>{
                           physics: NeverScrollableScrollPhysics(),
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
-                            return ListTile(
-                              title: Text(data.toString(),style: TextStyle(
+                            return CheckboxListTile(
+                              value: true,
+                              onChanged: (value) {},
+
+                              title: Text(tumSiniflar[0].dersler[0].konular[index].toString(),style: TextStyle(
                                 fontSize: 16,
                               ),
                               ),
@@ -91,7 +84,7 @@ class _DersListesiState extends State<DersListesi>{
 
 
                           },
-                          itemCount: tumSiniflar[0].dersler.length,
+                          itemCount: tumSiniflar[0].dersler[0].konular.length,
                         );
                       }else{
                         return Center(child: CircularProgressIndicator(),);
@@ -110,9 +103,9 @@ class _DersListesiState extends State<DersListesi>{
   Future<List> veriOku() async{
     var gelenJson = await DefaultAssetBundle.of(context).loadString("assets/data/mufredat.json");
     List<Sinif> sinifListesi = (json.decode(gelenJson) as List).map((mapYapisi) => Sinif.fromJson(mapYapisi)).toList();
-      for ( int a=0; a<sinifListesi[0].dersler.length; a++ ) {
-        debugPrint("Ders: " + sinifListesi[0].dersler[0].ders.toString());
-      }
+    for ( int a=0; a<sinifListesi[0].dersler[0].konular.length; a++ ) {
+      debugPrint("Ders: " + sinifListesi[0].dersler[0].konular[a].toString());
+    }
     return sinifListesi;
 
   }

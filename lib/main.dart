@@ -1,4 +1,3 @@
-import 'package:akilliRehber/dersler.dart';
 import 'package:akilliRehber/models/siniflar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
@@ -11,6 +10,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      onGenerateRoute: (RouteSettings settings){
+        return null;
+      },
       title: 'Hoşgeldiniz',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
@@ -83,7 +85,7 @@ class Hosgeldiniz extends StatelessWidget{
               color: Color(0xff6200ee),
 
               textColor: Colors.white,
-              onPressed: () => Navigator.push(
+              onPressed: () => Navigator.pushReplacement(
                 context,
                 MaterialPageRoute(builder: (context) => Siniflar()),
               ),
@@ -137,73 +139,70 @@ class _SiniflarState extends State<Siniflar>{
       title: 'Sınıf Seçimi',
       home: Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () => Navigator.of(context).pop(),
-          ),
+
           backgroundColor: Color(0xff6200ee),
           title: Text("AKILLI REHBER"),
           centerTitle: true,
         ),
-        body: Column(
+        body: SingleChildScrollView(
+          scrollDirection: Axis.vertical,
 
-          children:[
-            new Container(
-              child:  Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: <Widget>[
-                  Text('Bir sınıf seçiniz:',
-                      style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
-                ],
+          child: Column(
+
+            children:[
+              new Container(
+                child:  Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text('Bir sınıf seçiniz:',
+                        style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 20),
-            new Container(
+              const SizedBox(height: 20),
+              new Container(
 
-              alignment: Alignment.center,
-                      child: FutureBuilder(
-                          future: veriOku(),
-                          builder:(context, sonuc){
+                alignment: Alignment.center,
+                        child: FutureBuilder(
+                            future: veriOku(),
+                            builder:(context, sonuc){
 
-                        if(sonuc.hasData){
-                          tumSiniflar = sonuc.data;
-                          return ListView.builder(
-                            shrinkWrap: true,
-                            itemBuilder: (context, index) {
+                          if(sonuc.hasData){
+                            tumSiniflar = sonuc.data;
+                            return ListView.builder(
+                              shrinkWrap: true,
+                              itemBuilder: (context, index) {
 
-                            return Padding(
-                              padding: const EdgeInsets.fromLTRB(80, 10, 80, 10),
-                              child: RaisedButton(
-                                padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
-                                shape: RoundedRectangleBorder(
-                                  borderRadius: BorderRadius.circular(20.0),
-                                  side: BorderSide(color:Color(0xff6200ee)),
+                              return Padding(
+                                padding: const EdgeInsets.fromLTRB(80, 10, 80, 10),
+                                child: RaisedButton(
+                                  padding: EdgeInsets.fromLTRB(0, 20, 0, 20),
+                                  shape: RoundedRectangleBorder(
+                                    borderRadius: BorderRadius.circular(20.0),
+                                    side: BorderSide(color:Color(0xff6200ee)),
 
-                                ),
-                                color: Color(0xff6200ee),
-                                textColor: Colors.white,
-                                onPressed: () => Navigator.push(
-                                  context,
-                                  MaterialPageRoute(builder: (context) => DersListesi()),
-                                ),
-                                  child: Text(tumSiniflar[index].sinif,style: TextStyle(
-                                    fontSize: 24,
                                   ),
+                                  color: Color(0xff6200ee),
+                                  textColor: Colors.white,
+                                    onPressed: () { },
+                                    child: Text(tumSiniflar[index].sinif,style: TextStyle(
+                                      fontSize: 24,
+                                    ),
+                                    ),
                                   ),
+                              );
 
-                                ),
+
+                            },
+                            itemCount: tumSiniflar.length,
                             );
-
-
-                          },
-                          itemCount: tumSiniflar.length,
-                          );
-                        }else{
-                          return Center(child: CircularProgressIndicator(),);
-                        }
+                          }else{
+                            return Center(child: CircularProgressIndicator(),);
+                          }
     }),
     ),
-          ],
+            ],
+          ),
         ),
     ),
     );
