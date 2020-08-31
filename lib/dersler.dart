@@ -1,3 +1,4 @@
+
 import 'package:akilliRehber/main.dart';
 import 'package:akilliRehber/models/siniflar.dart';
 import 'package:flutter/material.dart';
@@ -6,23 +7,17 @@ import 'dart:convert';
 
 
 class DersListesi extends StatefulWidget{
-
-
   @override
-  _DersListesiState createState() =>_DersListesiState(data: null);
+  _DersListesiState createState() =>_DersListesiState();
 }
 
 class _DersListesiState extends State<DersListesi>{
-  final String data;
 
-  _DersListesiState({
-    Key key,
-    @required this.data,
-  }) : super();
 
 
 
   List<Sinif> tumSiniflar;
+
   @override void initState() {
     // TODO: implement initState
     super.initState();
@@ -82,7 +77,7 @@ class _DersListesiState extends State<DersListesi>{
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
                             return ListTile(
-                              title: Text(data.toString(),style: TextStyle(
+                              title: Text(tumSiniflar[index].dersler.toString(),style: TextStyle(
                                 fontSize: 16,
                               ),
                               ),

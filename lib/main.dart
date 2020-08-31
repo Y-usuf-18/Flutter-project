@@ -5,8 +5,12 @@ import 'package:flare_splash_screen/flare_splash_screen.dart';
 import 'dart:convert';
 
 
-void main() => runApp(MyApp());
+
+void main() {
+  runApp(MyApp());
+}
 class MyApp extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -115,12 +119,18 @@ class Hosgeldiniz extends StatelessWidget{
   }
 }
 class Siniflar extends StatefulWidget{
+
   @override
   _SiniflarState createState() =>_SiniflarState();
 }
 
 class _SiniflarState extends State<Siniflar>{
+  Future<List> veriOku() async{
+    var gelenJson = await DefaultAssetBundle.of(context).loadString("assets/data/mufredat.json");
+    List<Sinif> sinifListesi = (json.decode(gelenJson) as List).map((mapYapisi) => Sinif.fromJson(mapYapisi)).toList();
+    return sinifListesi;
 
+  }
   List<Sinif> tumSiniflar;
   @override void initState() {
     // TODO: implement initState
@@ -172,7 +182,6 @@ class _SiniflarState extends State<Siniflar>{
                             return ListView.builder(
                               shrinkWrap: true,
                               itemBuilder: (context, index) {
-
                               return Padding(
                                 padding: const EdgeInsets.fromLTRB(80, 10, 80, 10),
                                 child: RaisedButton(
@@ -184,15 +193,14 @@ class _SiniflarState extends State<Siniflar>{
                                   ),
                                   color: Color(0xff6200ee),
                                   textColor: Colors.white,
-                                    onPressed: () { },
+                                  onPressed: () {
+                                  },
                                     child: Text(tumSiniflar[index].sinif,style: TextStyle(
                                       fontSize: 24,
                                     ),
                                     ),
                                   ),
                               );
-
-
                             },
                             itemCount: tumSiniflar.length,
                             );
@@ -210,12 +218,7 @@ class _SiniflarState extends State<Siniflar>{
 
 
 
-  Future<List> veriOku() async{
-    var gelenJson = await DefaultAssetBundle.of(context).loadString("assets/data/mufredat.json");
-    List<Sinif> sinifListesi = (json.decode(gelenJson) as List).map((mapYapisi) => Sinif.fromJson(mapYapisi)).toList();
-    return sinifListesi;
 
-  }
 }
 
 
