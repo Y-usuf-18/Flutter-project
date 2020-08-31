@@ -1,4 +1,5 @@
 
+import 'package:akilliRehber/konular.dart';
 import 'package:akilliRehber/main.dart';
 import 'package:akilliRehber/models/siniflar.dart';
 import 'package:flutter/material.dart';
@@ -82,7 +83,11 @@ class _DersListesiState extends State<DersListesi>{
                                 fontSize: 16,
                               ),
                               ),
-
+                              onTap: () {
+                                Navigator.push(context,
+                                    new MaterialPageRoute(builder: (context) => KonuListesi(dersadi: tumSiniflar[index].dersler[index],))
+                                );
+                              },
                             );
 
 

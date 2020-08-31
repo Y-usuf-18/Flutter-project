@@ -5,12 +5,16 @@ import 'package:flutter/cupertino.dart';
 import 'dart:convert';
 
 
-class DersListesi extends StatefulWidget{
+class KonuListesi extends StatefulWidget{
+  final Dersler dersadi;
+
+  KonuListesi({this.dersadi});
+
   @override
-  _DersListesiState createState() =>_DersListesiState();
+  _KonuListesiState createState() =>_KonuListesiState();
 }
 
-class _DersListesiState extends State<DersListesi>{
+class _KonuListesiState extends State<KonuListesi>{
 
 
   List<Sinif> tumSiniflar;
@@ -53,7 +57,7 @@ class _DersListesiState extends State<DersListesi>{
 
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Text('Türk Dili ve Edebiyatı',
+                    Text(widget.dersadi.ders,
                         style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
                   ],
                 ),
@@ -76,7 +80,7 @@ class _DersListesiState extends State<DersListesi>{
                               value: true,
                               onChanged: (value) {},
 
-                              title: Text(tumSiniflar[0].dersler[0].konular[index].toString(),style: TextStyle(
+                              title: Text(widget.dersadi.konular[index].toString(),style: TextStyle(
                                 fontSize: 16,
                               ),
                               ),
@@ -85,7 +89,7 @@ class _DersListesiState extends State<DersListesi>{
 
 
                           },
-                          itemCount: tumSiniflar[0].dersler[0].konular.length,
+                          itemCount: widget.dersadi.konular.length,
                         );
                       }else{
                         return Center(child: CircularProgressIndicator(),);
