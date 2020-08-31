@@ -1,4 +1,4 @@
-# flutter_appp
+# Akıllı Rehber Mobil Uygulaması
 
 A new Flutter application.
 

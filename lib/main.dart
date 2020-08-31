@@ -134,7 +134,6 @@ class _SiniflarState extends State<Siniflar>{
   }
   List<Sinif> tumSiniflar;
   @override void initState() {
-    // TODO: implement initState
     super.initState();
     veriOku().then((gelenSiniflar){
       setState(() {
