@@ -1,4 +1,5 @@
 
+import 'package:akilliRehber/globals.dart';
 import 'package:akilliRehber/konular.dart';
 import 'package:akilliRehber/main.dart';
 import 'package:akilliRehber/models/siniflar.dart';
@@ -9,14 +10,16 @@ import 'dart:convert';
 
 class DersListesi extends StatefulWidget{
   final Sinif sinifadi;
+  final String adisoyadi;
 
-  DersListesi({this.sinifadi});
+  DersListesi({this.sinifadi,this.adisoyadi});
 
 
   @override
   _DersListesiState createState() =>_DersListesiState();
 }
 class _DersListesiState extends State<DersListesi>{
+
   List<Sinif> tumSiniflar;
 
   @override void initState() {
@@ -53,12 +56,23 @@ class _DersListesiState extends State<DersListesi>{
 
             children:[
               new Container(
+
                 child:  Row(
 
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-
                     Text( widget.sinifadi.sinif, style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
+
+                  ],
+                ),
+              ),
+              new Container(
+
+                child:  Row(
+
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: <Widget>[
+                    Text( nameSurname, style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
 
                   ],
                 ),

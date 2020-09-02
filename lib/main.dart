@@ -4,12 +4,13 @@ import 'package:flutter/cupertino.dart';
 import 'package:flare_splash_screen/flare_splash_screen.dart';
 import 'dart:convert';
 import 'package:akilliRehber/dersler.dart';
-
-
+import 'package:akilliRehber/globals.dart';
 
 void main() {
   runApp(MyApp());
 }
+
+
 class MyApp extends StatelessWidget {
 
   @override
@@ -35,12 +36,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
-
 class CallHome extends StatefulWidget {
   @override
   _CallHomeState createState() => _CallHomeState();
 }
-
 class _CallHomeState extends State<CallHome> {
   @override
   Widget build(BuildContext context) {
@@ -92,7 +91,7 @@ class Hosgeldiniz extends StatelessWidget{
               textColor: Colors.white,
               onPressed: () => Navigator.pushReplacement(
                 context,
-                MaterialPageRoute(builder: (context) => Siniflar()),
+                MaterialPageRoute(builder: (context) => Profil()),
               ),
               child: Container(
 
@@ -119,12 +118,98 @@ class Hosgeldiniz extends StatelessWidget{
     );
   }
 }
+
+class Profil extends StatefulWidget{
+
+  @override
+  _ProfilState createState() =>_ProfilState();
+}
+class _ProfilState extends State<Profil>{
+  final myController = TextEditingController();
+  @override
+  void dispose() {
+    // Clean up the controller when the widget is disposed.
+    myController.dispose();
+    super.dispose();
+  }
+  final formKey=GlobalKey<FormState>();
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      title: 'Profil Oluştur',
+      home: Scaffold(
+        appBar: AppBar(
+          backgroundColor: Color(0xff6200ee),
+          title: Text("AKILLI REHBER"),
+          centerTitle: true,
+        ),
+        body: Padding(padding: EdgeInsets.all(15.0),
+          child: Form(
+            key: formKey,
+            child: ListView(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Text("İsiminizi girin:"),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: TextFormField(
+                    keyboardType: TextInputType.text,
+                    textInputAction: TextInputAction.done,
+                    maxLines: 1,
+                    maxLength: 25,
+                    maxLengthEnforced: true,
+                    controller: myController,
+                    validator: (String girilenVeri) {
+                      if(girilenVeri.length<6){
+                        return "Lütfen adınızı ve soyadınızı girin";
+                      }else return null;
+                    },
+                    onSaved:(String deger){
+                      nameSurname = deger;
+                    },
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: RaisedButton.icon(
+                    icon: Icon(Icons.navigate_next,color: Colors.white,),
+                    label: Text("DEVAM ET"),
+                    color: Colors.blue,
+                    disabledColor: Colors.blueGrey,
+                    onPressed: _girisBilgileriniOnayla,
+                  )
+                ),
+
+              ],
+
+            ),
+          ),
+          ),
+        ),
+      );
+  }
+  void _girisBilgileriniOnayla(){
+    if(formKey.currentState.validate()){
+      formKey.currentState.save();
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => Siniflar()),
+      );
+    }
+  }
+
+}
+
 class Siniflar extends StatefulWidget{
 
   @override
   _SiniflarState createState() =>_SiniflarState();
 }
-
 class _SiniflarState extends State<Siniflar>{
   Future<List> veriOku() async{
     var gelenJson = await DefaultAssetBundle.of(context).loadString("assets/data/mufredat.json");
@@ -221,5 +306,3 @@ class _SiniflarState extends State<Siniflar>{
     );
     }
 }
-
-
