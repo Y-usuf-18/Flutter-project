@@ -99,7 +99,7 @@ class _DersListesiState extends State<DersListesi>{
                                   textAlign: TextAlign.left,
                                 ),
                                 circularStrokeCap: CircularStrokeCap.round,
-                                progressColor: Colors.purple,
+                                progressColor: Color(0xff6200ee),
                               ),
                             ],
                           ),
@@ -138,7 +138,7 @@ class _DersListesiState extends State<DersListesi>{
                                     width: 100.0,
                                     lineHeight: 8.0,
                                     percent: 0.9,
-                                    progressColor: Colors.blue,
+                                    progressColor: Color(0xff6200ee),
                                   )
                                 ],
                               ),

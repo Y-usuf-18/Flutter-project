@@ -74,10 +74,10 @@ class _KonuListesiState extends State<KonuListesi>{
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
                             return CheckboxListTile(
-                              value: true,
+                              value: widget.dersadi.konular[index].durum,
                               onChanged: (value) {},
 
-                              title: Text(widget.dersadi.konular[index].toString(),style: TextStyle(
+                              title: Text(widget.dersadi.konular[index].konu.toString(),style: TextStyle(
                                 fontSize: 16,
                               ),
                               ),

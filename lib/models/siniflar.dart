@@ -22,19 +22,16 @@ class Sinif {
     }
 }
 
-
-
-
 class Dersler {
     String ders;
-    List<String> konular;
+    List<Konular> konular;
 
     Dersler({this.ders, this.konular});
 
     factory Dersler.fromJson(Map<String, dynamic> json) {
         return Dersler(
             ders: json['ders'],
-            konular: json['konular'] != null ? new List<String>.from(json['konular']) : null,
+            konular: json['konular'] != null ? (json['konular'] as List).map((i) => Konular.fromJson(i)).toList() : null,
         );
     }
 
@@ -42,8 +39,29 @@ class Dersler {
         final Map<String, dynamic> data = new Map<String, dynamic>();
         data['ders'] = this.ders;
         if (this.konular != null) {
-            data['konular'] = this.konular;
+            data['konular'] = this.konular.map((v) => v.toJson()).toList();
         }
+        return data;
+    }
+}
+
+class Konular {
+    bool durum;
+    String konu;
+
+    Konular({this.durum, this.konu});
+
+    factory Konular.fromJson(Map<String, dynamic> json) {
+        return Konular(
+            durum: json['durum'],
+            konu: json['konu'],
+        );
+    }
+
+    Map<String, dynamic> toJson() {
+        final Map<String, dynamic> data = new Map<String, dynamic>();
+        data['durum'] = this.durum;
+        data['konu'] = this.konu;
         return data;
     }
 }
