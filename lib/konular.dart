@@ -1,3 +1,4 @@
+
 import 'package:akilliRehber/main.dart';
 import 'package:akilliRehber/models/siniflar.dart';
 import 'package:flutter/material.dart';
@@ -75,7 +76,11 @@ class _KonuListesiState extends State<KonuListesi>{
                           itemBuilder: (context, index) {
                             return CheckboxListTile(
                               value: widget.dersadi.konular[index].durum,
-                              onChanged: (value) {},
+                              onChanged: (bool value) {
+                                setState(() {
+                                  widget.dersadi.konular[index].durum =value;
+                                });
+                              },
 
                               title: Text(widget.dersadi.konular[index].konu.toString(),style: TextStyle(
                                 fontSize: 16,
@@ -108,6 +113,7 @@ class _KonuListesiState extends State<KonuListesi>{
     for ( int a=0; a<sinifListesi[0].dersler[0].konular.length; a++ ) {
       debugPrint("Ders: " + sinifListesi[0].dersler[0].konular[a].toString());
     }
+
     return sinifListesi;
 
   }

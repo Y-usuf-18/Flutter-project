@@ -7,11 +7,11 @@
         "konular":[
           {
             "konu":"Edebiyat (Yazın)",
-            "durum":false
+            "durum":true
           },
           {
             "konu":"Edebiyat ve Bilim",
-            "durum":false
+            "durum":true
           },
           {
             "konu":"Edebiyatın Güzel Sanatlarla İlişkisi",
@@ -1422,7 +1422,7 @@
         "konular":[
           {
             "konu":"Sunum",
-            "durum":false
+            "durum":true
           },
           {
             "konu":"Tartışma",
@@ -5048,7 +5048,7 @@
         "konular":[
           {
             "konu":"Üstel Fonksiyon",
-            "durum":false
+            "durum":true
           },
           {
             "konu":"Logaritmik Fonksiyon",

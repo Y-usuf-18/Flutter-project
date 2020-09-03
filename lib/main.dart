@@ -8,6 +8,7 @@ import 'package:akilliRehber/globals.dart';
 
 void main() {
   runApp(MyApp());
+
 }
 
 
@@ -315,7 +316,7 @@ class _SiniflarState extends State<Siniflar>{
                                   textColor: Colors.white,
                                   onPressed: () {
                                     Navigator.push(context,
-                                    new MaterialPageRoute(builder: (context) => DersListesi(sinifadi: tumSiniflar[index],))
+                                    new MaterialPageRoute(builder: (context) => DersListesi(sinifadi: tumSiniflar[index],dersadi: tumSiniflar[index].dersler[index],))
                                     );
                                   },
                                     child: Text(tumSiniflar[index].sinif,style: TextStyle(
