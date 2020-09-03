@@ -1,11 +1,13 @@
 
 import 'package:akilliRehber/globals.dart';
 import 'package:akilliRehber/konular.dart';
-import 'package:akilliRehber/main.dart';
 import 'package:akilliRehber/models/siniflar.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
 import 'dart:convert';
+
+import 'package:percent_indicator/circular_percent_indicator.dart';
+import 'package:percent_indicator/linear_percent_indicator.dart';
 
 
 class DersListesi extends StatefulWidget{
@@ -38,13 +40,7 @@ class _DersListesiState extends State<DersListesi>{
       title: 'Dersler',
       home: Scaffold(
         appBar: AppBar(
-          leading: IconButton(
-            icon: Icon(Icons.arrow_back),
-            onPressed: () => Navigator.push(
-              context,
-              MaterialPageRoute(builder: (context) => Siniflar()),
-            ),
-          ),
+
           backgroundColor: Color(0xff6200ee),
           title: Text("AKILLI REHBER"),
           centerTitle: true,
@@ -56,25 +52,62 @@ class _DersListesiState extends State<DersListesi>{
 
             children:[
               new Container(
+                decoration: const BoxDecoration(
+                  border: Border(
 
-                child:  Row(
-
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text( widget.sinifadi.sinif, style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
-
-                  ],
+                    bottom: BorderSide(width: 1.0, color: Colors.black26),
+                  ),
                 ),
-              ),
-              new Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(16.0),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
 
-                child:  Row(
+                    children: <Widget>[
+                      new Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Row(
+                            children: <Widget>[
+                              Text( nameSurname, style: TextStyle(fontSize: 24, height: 2 ,fontWeight: FontWeight.w500), textAlign: TextAlign.left,),
 
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: <Widget>[
-                    Text( nameSurname, style: TextStyle(fontSize: 28, height: 2 ,fontWeight: FontWeight.bold)),
+                            ],
+                          ),
+                          Row(
+                            children: <Widget>[
+                              Text( widget.sinifadi.sinif, style: TextStyle(fontSize: 18, height: 2 ,fontWeight: FontWeight.w400), textAlign: TextAlign.left,),
 
-                  ],
+                            ],
+                          ),
+                        ],
+                      ),
+                      new Column(
+
+                        children: <Widget>[
+                          Row(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: <Widget>[
+                              new CircularPercentIndicator(
+                                radius: 100.0,
+                                lineWidth: 10.0,
+                                animation: true,
+                                percent: 0.7,
+                                center: new Text(
+                                  "70.0%",
+                                  style:
+                                  new TextStyle(fontWeight: FontWeight.w400, fontSize: 20.0),
+                                  textAlign: TextAlign.left,
+                                ),
+                                circularStrokeCap: CircularStrokeCap.round,
+                                progressColor: Colors.purple,
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+
+                    ],
+                  ),
                 ),
               ),
               const SizedBox(height: 20),
@@ -92,10 +125,24 @@ class _DersListesiState extends State<DersListesi>{
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
                             return ListTile(
-                              title: Text(widget.sinifadi.dersler[index].ders.toString(),style: TextStyle(
-                                fontSize: 16,
+                              title: Row(
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+
+                                children: <Widget>[
+                                  Text(widget.sinifadi.dersler[index].ders.toString(),style: TextStyle(
+                                    fontSize: 16,
+                                  ),
+                                  ),
+                                  new LinearPercentIndicator(
+                                    animation: true,
+                                    width: 100.0,
+                                    lineHeight: 8.0,
+                                    percent: 0.9,
+                                    progressColor: Colors.blue,
+                                  )
+                                ],
                               ),
-                              ),
+
                               onTap: () {
                                 Navigator.push(context,
                                     new MaterialPageRoute(builder: (context) => KonuListesi(dersadi: widget.sinifadi.dersler[index],))

@@ -139,58 +139,93 @@ class _ProfilState extends State<Profil>{
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Profil Oluştur',
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Color(0xff6200ee),
-          title: Text("AKILLI REHBER"),
-          centerTitle: true,
+      home: Theme(
+        data: ThemeData(
+          primaryColor: Color(0xff6200ee),
+          accentColor: Color(0xff6200ee),
         ),
-        body: Padding(padding: EdgeInsets.all(15.0),
-          child: Form(
-            key: formKey,
-            child: ListView(
-              children: <Widget>[
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: Text("İsiminizi girin:"),
-                ),
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: TextFormField(
-                    keyboardType: TextInputType.text,
-                    textInputAction: TextInputAction.done,
-                    maxLines: 1,
-                    maxLength: 25,
-                    maxLengthEnforced: true,
-                    controller: myController,
-                    validator: (String girilenVeri) {
-                      if(girilenVeri.length<6){
-                        return "Lütfen adınızı ve soyadınızı girin";
-                      }else return null;
-                    },
-                    onSaved:(String deger){
-                      nameSurname = deger;
-                    },
+        child: Scaffold(
+          appBar: AppBar(
+            title: Text("AKILLI REHBER"),
+            centerTitle: true,
+          ),
+          body: Padding(padding: EdgeInsets.all(15.0),
+            child: Form(
+              key: formKey,
+              child: ListView(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text('İsiminizi Giriniz:',
+                            style: TextStyle(fontSize: 28, height: 2, fontWeight: FontWeight.w500)),
+                      ],
+                    ),
                   ),
-                ),
+                  const SizedBox(height: 20),
+                  Padding(
+                    padding: const EdgeInsets.all(16.0),
+                    child: TextFormField(
+                      decoration: new InputDecoration(
+                        labelText: "İsim Soyisim",
+                        prefixIcon: Icon(Icons.person,color: Color(0xff6200ee),),
+                        fillColor: Colors.white,
+                        border: new OutlineInputBorder(
+                          borderRadius: BorderRadius.circular(20.0),
 
-                Padding(
-                  padding: const EdgeInsets.all(16.0),
-                  child: RaisedButton.icon(
-                    icon: Icon(Icons.navigate_next,color: Colors.white,),
-                    label: Text("DEVAM ET"),
-                    color: Colors.blue,
-                    disabledColor: Colors.blueGrey,
-                    onPressed: _girisBilgileriniOnayla,
+                        ),
+
+                      ),
+                      keyboardType: TextInputType.text,
+                      textInputAction: TextInputAction.done,
+                      maxLines: 1,
+                      maxLength: 25,
+                      maxLengthEnforced: true,
+                      controller: myController,
+                      validator: (String girilenVeri) {
+                        if(girilenVeri.length<6){
+                          return "Lütfen adınızı ve soyadınızı girin";
+                        }else return null;
+                      },
+                      onSaved:(String deger){
+                        nameSurname = deger;
+                      },
+                    ),
+                  ),
+                  Padding(
+                      padding: const EdgeInsets.all(16.0),
+                      child: Container(
+                          width: 210,
+                          child: RaisedButton(
+                            padding: EdgeInsets.fromLTRB(0, 15, 0, 15),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20.0),
+                              side: BorderSide(color:Color(0xff6200ee)),
+
+                            ),
+                            color: Color(0xff6200ee),
+                            textColor: Colors.white,
+                            onPressed: _girisBilgileriniOnayla,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: <Widget>[
+                                Text("DEVAM ET",style: TextStyle(fontSize: 20)),
+                                Icon(Icons.navigate_next, size: 30,)
+                              ],
+
+                          ),),
+                  ),
                   )
-                ),
+                ],
 
-              ],
-
+              ),
+            ),
             ),
           ),
-          ),
-        ),
+      ),
       );
   }
   void _girisBilgileriniOnayla(){
@@ -250,7 +285,7 @@ class _SiniflarState extends State<Siniflar>{
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
                     Text('Bir sınıf seçiniz:',
-                        style: TextStyle(fontSize: 28, height: 3, fontWeight: FontWeight.bold)),
+                        style: TextStyle(fontSize: 28, height: 3, fontWeight: FontWeight.w500)),
                   ],
                 ),
               ),
