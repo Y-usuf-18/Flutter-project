@@ -11,10 +11,11 @@ import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class DersListesi extends StatefulWidget{
   final Sinif sinifadi;
-  final Dersler dersadi;
-  final String adisoyadi;
   final Konular konuadi;
-  DersListesi({this.sinifadi,this.adisoyadi, this.konuadi, this.dersadi});
+
+  final String adisoyadi;
+
+  DersListesi({this.sinifadi,this.adisoyadi,this.konuadi});
 
 
 
@@ -39,13 +40,6 @@ class _DersListesiState extends State<DersListesi>{
 
   @override
   Widget build(BuildContext context) {
-    int doluCheckboxlar =widget.dersadi.konular.where((durum) => durum.durum == true).length;
-    int tumCheckboxlar =widget.dersadi.konular.length;
-    double yuzde = double.parse((doluCheckboxlar/tumCheckboxlar).toStringAsFixed(2));
-    if( yuzde == double.infinity ){
-      yuzde =0;
-    } else yuzde = double.parse((doluCheckboxlar/tumCheckboxlar).toStringAsFixed(2));
-    debugPrint("$yuzde" );
 
 
 
@@ -108,9 +102,9 @@ class _DersListesiState extends State<DersListesi>{
                                 radius: 100.0,
                                 lineWidth: 10.0,
                                 animation: true,
-                                percent: yuzde,
+                                percent: percentb,
                                 center: new Text(
-                                  yuzde.toString()+"%",
+                                  (percentb*100).toString() + "%",
                                   style:
                                   new TextStyle(fontWeight: FontWeight.w400, fontSize: 20.0),
                                   textAlign: TextAlign.left,
@@ -144,14 +138,14 @@ class _DersListesiState extends State<DersListesi>{
 
                             int a =widget.sinifadi.dersler[index].konular.where((durum) => durum.durum == true).length;
                             int b =widget.sinifadi.dersler[index].konular.length;
-                            debugPrint("$a" );
-                            debugPrint("$b" );
-
                             double c = double.parse((a/b).toStringAsFixed(2));
                             if( c == double.infinity ){
                               c =0;
                             } else c = double.parse((a/b).toStringAsFixed(2));
                             debugPrint("$c" );
+                            checked +=a;
+                            checks +=b;
+                            percentb = double.parse((checked/checks).toStringAsFixed(2));
 
                             return ListTile(
 
@@ -198,6 +192,7 @@ class _DersListesiState extends State<DersListesi>{
 
 
 
+
   Future<List> veriOku() async{
     var gelenJson = await DefaultAssetBundle.of(context).loadString("assets/data/mufredat.json");
     List<Sinif> sinifListesi = (json.decode(gelenJson) as List).map((mapYapisi) => Sinif.fromJson(mapYapisi)).toList();
@@ -205,9 +200,7 @@ class _DersListesiState extends State<DersListesi>{
         debugPrint("Ders: " + sinifListesi[0].dersler[0].ders.toString());
       }
     return sinifListesi;
-
   }
-
 }
 
 

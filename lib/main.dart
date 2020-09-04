@@ -243,10 +243,12 @@ class _ProfilState extends State<Profil>{
 
 class Siniflar extends StatefulWidget{
 
+
   @override
   _SiniflarState createState() =>_SiniflarState();
 }
 class _SiniflarState extends State<Siniflar>{
+
   Future<List> veriOku() async{
     var gelenJson = await DefaultAssetBundle.of(context).loadString("assets/data/mufredat.json");
     List<Sinif> sinifListesi = (json.decode(gelenJson) as List).map((mapYapisi) => Sinif.fromJson(mapYapisi)).toList();
@@ -316,7 +318,7 @@ class _SiniflarState extends State<Siniflar>{
                                   textColor: Colors.white,
                                   onPressed: () {
                                     Navigator.push(context,
-                                    new MaterialPageRoute(builder: (context) => DersListesi(sinifadi: tumSiniflar[index],dersadi: tumSiniflar[index].dersler[index],))
+                                    new MaterialPageRoute(builder: (context) => DersListesi(sinifadi: tumSiniflar[index],))
                                     );
                                   },
                                     child: Text(tumSiniflar[index].sinif,style: TextStyle(
