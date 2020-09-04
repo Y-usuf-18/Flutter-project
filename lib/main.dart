@@ -5,6 +5,7 @@ import 'package:flare_splash_screen/flare_splash_screen.dart';
 import 'dart:convert';
 import 'package:akilliRehber/dersler.dart';
 import 'package:akilliRehber/globals.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 void main() {
   runApp(MyApp());
@@ -127,6 +128,15 @@ class Profil extends StatefulWidget{
 }
 class _ProfilState extends State<Profil>{
   final myController = TextEditingController();
+  SharedPreferences mySharedPreferences;
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    SharedPreferences.getInstance().then((sf){
+      mySharedPreferences=sf;
+    });
+  }
   @override
   void dispose() {
     // Clean up the controller when the widget is disposed.
@@ -232,6 +242,7 @@ class _ProfilState extends State<Profil>{
   void _girisBilgileriniOnayla(){
     if(formKey.currentState.validate()){
       formKey.currentState.save();
+
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => Siniflar()),

@@ -6,6 +6,9 @@ import 'package:flutter/cupertino.dart';
 import 'dart:convert';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 import 'package:percent_indicator/linear_percent_indicator.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+
+import 'main.dart';
 
 
 
@@ -28,8 +31,12 @@ class _DersListesiState extends State<DersListesi>{
 
 
   List<Sinif> tumSiniflar;
-  @override void initState() {
 
+  SharedPreferences mySharedPreferences;
+  @override void initState() {
+    SharedPreferences.getInstance().then((sf){
+      mySharedPreferences=sf;
+    });
     super.initState();
     veriOku().then((gelenSiniflar){
       setState(() {
@@ -183,13 +190,41 @@ class _DersListesiState extends State<DersListesi>{
                       }
                     }),
               ),
+              const SizedBox(height: 20),
+
+              new Container(
+                child: Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: RaisedButton(
+                    padding: EdgeInsets.fromLTRB(30, 15, 30, 15),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(20.0),
+                      side: BorderSide(color:Color(0xff6200ee)),
+
+                    ),
+                    color: Colors.red,
+                    textColor: Colors.white,
+                    onPressed: () {Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => Hosgeldiniz()),
+                    );},
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("Çıkış Yap  ",style: TextStyle(fontSize: 24)),
+
+                        Icon(Icons.exit_to_app, size: 30,)
+                      ],
+
+                    ),),
+                ),
+              ),
             ],
           ),
         ),
       ),
     );
   }
-
 
 
 
